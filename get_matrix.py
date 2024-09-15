@@ -18,7 +18,7 @@ def haversine(lat1, lon1, lat2, lon2):
     return R * c
 
 # Leitura do arquivo CSV
-df = pd.read_csv('C:\\Users\\neumann\\Documents\\projects\\get\\restaurantes_position.csv')
+df = pd.read_csv('C:\\Users\\neumann\\Documents\\projects\\get\\all_pos.csv')
 
 # Inicializa a matriz de distância
 n = len(df)
@@ -38,4 +38,4 @@ distance_df = pd.DataFrame(distance_matrix, index=df['Nome'], columns=df['Nome']
 print(distance_df)
 
 # Salva a matriz de distância em um novo arquivo CSV
-distance_df.to_csv('C:\\Users\\neumann\\Documents\\projects\\get\\restaurantes_distance_matrix.csv', index=True)
+distance_df.to_csv('C:\\Users\\neumann\\Documents\\projects\\get\\all_distance_matrix.csv', index=True)
