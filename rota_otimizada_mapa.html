@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b7326e548ef335969a3b567c7400015 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0b7326e548ef335969a3b567c7400015" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0b7326e548ef335969a3b567c7400015 = L.map(
+                "map_0b7326e548ef335969a3b567c7400015",
+                {
+                    center: [-3.741474234375, -38.51192676788877],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_de8e41f61d3b3db17e9665abb2c14b07 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_de8e41f61d3b3db17e9665abb2c14b07.addTo(map_0b7326e548ef335969a3b567c7400015);
+        
+    
+            var marker_cluster_fedb064b399204040d6f9df4172e02b0 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_b0c758e1372eed887197669480fb99dc = L.marker(
+                [-3.73171205, -38.572471207354525],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_06c6f34b345027a7a8e46ae7f7b2ccfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b0c758e1372eed887197669480fb99dc.setIcon(icon_06c6f34b345027a7a8e46ae7f7b2ccfa);
+        
+    
+        var popup_a301d2b80fc9850f67712f58805845f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dda4341ca5ad024137c4d8e61e753f5d = $(`<div id="html_dda4341ca5ad024137c4d8e61e753f5d" style="width: 100.0%; height: 100.0%;">Servprint</div>`)[0];
+                popup_a301d2b80fc9850f67712f58805845f8.setContent(html_dda4341ca5ad024137c4d8e61e753f5d);
+            
+        
+
+        marker_b0c758e1372eed887197669480fb99dc.bindPopup(popup_a301d2b80fc9850f67712f58805845f8)
+        ;
+
+        
+    
+    
+            var marker_0f58e05cc0094fbaf1aa54626c202747 = L.marker(
+                [-3.7354033, -38.6583865],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_9f05a20433f8221f1d4beb0365e965a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f58e05cc0094fbaf1aa54626c202747.setIcon(icon_9f05a20433f8221f1d4beb0365e965a8);
+        
+    
+        var popup_035f092f56705e3555bfffe3d85518e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeec5ac9b9ce59fb91810cab433d2a4e = $(`<div id="html_eeec5ac9b9ce59fb91810cab433d2a4e" style="width: 100.0%; height: 100.0%;">Partido Liberal - Comitê de Caucaia</div>`)[0];
+                popup_035f092f56705e3555bfffe3d85518e0.setContent(html_eeec5ac9b9ce59fb91810cab433d2a4e);
+            
+        
+
+        marker_0f58e05cc0094fbaf1aa54626c202747.bindPopup(popup_035f092f56705e3555bfffe3d85518e0)
+        ;
+
+        
+    
+    
+            var marker_3ccf7ddfe545d88dea81d770626298ca = L.marker(
+                [-3.7935838, -38.5697252],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_616aa4d8598508c614d512a362e48455 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ccf7ddfe545d88dea81d770626298ca.setIcon(icon_616aa4d8598508c614d512a362e48455);
+        
+    
+        var popup_ba9aa47d1fce84f1388bdf1d8027f63f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_744fea7a584bb328fd307f343c4ab0c9 = $(`<div id="html_744fea7a584bb328fd307f343c4ab0c9" style="width: 100.0%; height: 100.0%;">Colégio Provecto</div>`)[0];
+                popup_ba9aa47d1fce84f1388bdf1d8027f63f.setContent(html_744fea7a584bb328fd307f343c4ab0c9);
+            
+        
+
+        marker_3ccf7ddfe545d88dea81d770626298ca.bindPopup(popup_ba9aa47d1fce84f1388bdf1d8027f63f)
+        ;
+
+        
+    
+    
+            var marker_a884d4b7bdf64e42d3c024eea04de81e = L.marker(
+                [-3.7887883, -38.4793656942343],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_a325feb5bbab969637ffe048cea259b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a884d4b7bdf64e42d3c024eea04de81e.setIcon(icon_a325feb5bbab969637ffe048cea259b0);
+        
+    
+        var popup_dc8128d943118dae4bd5a238a0ddc99f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f93a32836769265de7d587e99094e5f = $(`<div id="html_0f93a32836769265de7d587e99094e5f" style="width: 100.0%; height: 100.0%;">Colégio Ari de Sá Cavalcante</div>`)[0];
+                popup_dc8128d943118dae4bd5a238a0ddc99f.setContent(html_0f93a32836769265de7d587e99094e5f);
+            
+        
+
+        marker_a884d4b7bdf64e42d3c024eea04de81e.bindPopup(popup_dc8128d943118dae4bd5a238a0ddc99f)
+        ;
+
+        
+    
+    
+            var marker_557dc0d3c674728288afea1216626943 = L.marker(
+                [-3.75407425, -38.44513401453182],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_fba018a606a38910281315c0b3926aa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_557dc0d3c674728288afea1216626943.setIcon(icon_fba018a606a38910281315c0b3926aa0);
+        
+    
+        var popup_e038e7687fff7266c6e67d9d1118ddc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dbe1ee8eaf33e03f45a86fb1d22397a = $(`<div id="html_2dbe1ee8eaf33e03f45a86fb1d22397a" style="width: 100.0%; height: 100.0%;">Chico do Caranguejo</div>`)[0];
+                popup_e038e7687fff7266c6e67d9d1118ddc7.setContent(html_2dbe1ee8eaf33e03f45a86fb1d22397a);
+            
+        
+
+        marker_557dc0d3c674728288afea1216626943.bindPopup(popup_e038e7687fff7266c6e67d9d1118ddc7)
+        ;
+
+        
+    
+    
+            var marker_cb77dedc52648d7799febd7c23d9ba75 = L.marker(
+                [-3.7460166, -38.4678484],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_05a5fb882f9062c8dd8555088b6e0e8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb77dedc52648d7799febd7c23d9ba75.setIcon(icon_05a5fb882f9062c8dd8555088b6e0e8d);
+        
+    
+        var popup_d5eab5f7b7f873411dcf27df8dd428b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3da95e07e2dfd2f644ffaa12be796886 = $(`<div id="html_3da95e07e2dfd2f644ffaa12be796886" style="width: 100.0%; height: 100.0%;">Colégio Christus</div>`)[0];
+                popup_d5eab5f7b7f873411dcf27df8dd428b3.setContent(html_3da95e07e2dfd2f644ffaa12be796886);
+            
+        
+
+        marker_cb77dedc52648d7799febd7c23d9ba75.bindPopup(popup_d5eab5f7b7f873411dcf27df8dd428b3)
+        ;
+
+        
+    
+    
+            var marker_221e9517b4248d7e315e2ff45fe85725 = L.marker(
+                [-3.7396357, -38.4881497],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_3f45c6b982737630ba7d626412719a87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_221e9517b4248d7e315e2ff45fe85725.setIcon(icon_3f45c6b982737630ba7d626412719a87);
+        
+    
+        var popup_67ae2f722951e7098163da917ea3b137 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96ce5c091f65b3487d489bf49634416d = $(`<div id="html_96ce5c091f65b3487d489bf49634416d" style="width: 100.0%; height: 100.0%;">Colégio 7 de Setembro</div>`)[0];
+                popup_67ae2f722951e7098163da917ea3b137.setContent(html_96ce5c091f65b3487d489bf49634416d);
+            
+        
+
+        marker_221e9517b4248d7e315e2ff45fe85725.bindPopup(popup_67ae2f722951e7098163da917ea3b137)
+        ;
+
+        
+    
+    
+            var marker_bc0a4f63b33fa2672d6d214de3b96585 = L.marker(
+                [-3.7401119, -38.4908445],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_ba83d4ac3429e39d8321f60850a595c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc0a4f63b33fa2672d6d214de3b96585.setIcon(icon_ba83d4ac3429e39d8321f60850a595c3);
+        
+    
+        var popup_b63d6ef5e18e56d074097ebd8e9e46cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dd08c9172dec672d56d08c141fe0d46 = $(`<div id="html_5dd08c9172dec672d56d08c141fe0d46" style="width: 100.0%; height: 100.0%;">PSDB Partido da Social Democracia Brasileira</div>`)[0];
+                popup_b63d6ef5e18e56d074097ebd8e9e46cc.setContent(html_5dd08c9172dec672d56d08c141fe0d46);
+            
+        
+
+        marker_bc0a4f63b33fa2672d6d214de3b96585.bindPopup(popup_b63d6ef5e18e56d074097ebd8e9e46cc)
+        ;
+
+        
+    
+    
+            var marker_93146efd66821b3251367e822959813f = L.marker(
+                [-3.7405435, -38.4986338],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_8af70f95aec91ccf169d27be121d5220 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_93146efd66821b3251367e822959813f.setIcon(icon_8af70f95aec91ccf169d27be121d5220);
+        
+    
+        var popup_d29a2e8104e77ced3d7af1a4da218440 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdef035549d3066fd458233f2eacb938 = $(`<div id="html_bdef035549d3066fd458233f2eacb938" style="width: 100.0%; height: 100.0%;">Colégio Santa Cecília</div>`)[0];
+                popup_d29a2e8104e77ced3d7af1a4da218440.setContent(html_bdef035549d3066fd458233f2eacb938);
+            
+        
+
+        marker_93146efd66821b3251367e822959813f.bindPopup(popup_d29a2e8104e77ced3d7af1a4da218440)
+        ;
+
+        
+    
+    
+            var marker_b9025adbe943fabefb327b5035160d0f = L.marker(
+                [-3.7343695, -38.5105147],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_908ee9761173aef495f2c1edfbc583a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b9025adbe943fabefb327b5035160d0f.setIcon(icon_908ee9761173aef495f2c1edfbc583a0);
+        
+    
+        var popup_f11a4590f967be22995eb7f15cd2e5ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_384e858393b406f9f2913fc7e2f2e9cb = $(`<div id="html_384e858393b406f9f2913fc7e2f2e9cb" style="width: 100.0%; height: 100.0%;">Cantinho do Frango</div>`)[0];
+                popup_f11a4590f967be22995eb7f15cd2e5ef.setContent(html_384e858393b406f9f2913fc7e2f2e9cb);
+            
+        
+
+        marker_b9025adbe943fabefb327b5035160d0f.bindPopup(popup_f11a4590f967be22995eb7f15cd2e5ef)
+        ;
+
+        
+    
+    
+            var marker_5aa76186a42c8387d98193cd1ea98b66 = L.marker(
+                [-3.7207344, -38.5114094],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_0862cebdd65edb9ef8839f4e7f7da1a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5aa76186a42c8387d98193cd1ea98b66.setIcon(icon_0862cebdd65edb9ef8839f4e7f7da1a0);
+        
+    
+        var popup_aa5e2df09523b427149d82af6b4b0068 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92e2ae073963e78e16fe8d4fce8aa311 = $(`<div id="html_92e2ae073963e78e16fe8d4fce8aa311" style="width: 100.0%; height: 100.0%;">Restaurante Brazão</div>`)[0];
+                popup_aa5e2df09523b427149d82af6b4b0068.setContent(html_92e2ae073963e78e16fe8d4fce8aa311);
+            
+        
+
+        marker_5aa76186a42c8387d98193cd1ea98b66.bindPopup(popup_aa5e2df09523b427149d82af6b4b0068)
+        ;
+
+        
+    
+    
+            var marker_68e86f8d3467855b74a76a0903f74a0c = L.marker(
+                [-3.7368896, -38.5352833],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_08f2449455dfeac95ff1c461f4da2c43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68e86f8d3467855b74a76a0903f74a0c.setIcon(icon_08f2449455dfeac95ff1c461f4da2c43);
+        
+    
+        var popup_0858ab7ed7661dca0fd086f8a2a6512b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01b63019c2904857d84af030cf76d2fe = $(`<div id="html_01b63019c2904857d84af030cf76d2fe" style="width: 100.0%; height: 100.0%;">Partido dos Trabalhadores Diretório Estadual do Ceará</div>`)[0];
+                popup_0858ab7ed7661dca0fd086f8a2a6512b.setContent(html_01b63019c2904857d84af030cf76d2fe);
+            
+        
+
+        marker_68e86f8d3467855b74a76a0903f74a0c.bindPopup(popup_0858ab7ed7661dca0fd086f8a2a6512b)
+        ;
+
+        
+    
+    
+            var marker_1c9783ee74d176195be4c40f6412d642 = L.marker(
+                [-3.7352047, -38.5496316],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_76e8e85f0d3cef02717829939e5ee30c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c9783ee74d176195be4c40f6412d642.setIcon(icon_76e8e85f0d3cef02717829939e5ee30c);
+        
+    
+        var popup_2e33c8ff3f5cb5c480ad13f136e498dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_018157a70c3ba6f1bb5efe5e2e4cbe3b = $(`<div id="html_018157a70c3ba6f1bb5efe5e2e4cbe3b" style="width: 100.0%; height: 100.0%;">Carneiro do Ordones</div>`)[0];
+                popup_2e33c8ff3f5cb5c480ad13f136e498dd.setContent(html_018157a70c3ba6f1bb5efe5e2e4cbe3b);
+            
+        
+
+        marker_1c9783ee74d176195be4c40f6412d642.bindPopup(popup_2e33c8ff3f5cb5c480ad13f136e498dd)
+        ;
+
+        
+    
+    
+            var marker_0a6a516802ab9366dce7ca03efe89657 = L.marker(
+                [-3.73801705, -38.56220127725775],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_9b00eab3663ba6c8870f6864ac890d6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a6a516802ab9366dce7ca03efe89657.setIcon(icon_9b00eab3663ba6c8870f6864ac890d6a);
+        
+    
+        var popup_f6639299fec8dce7ae2c8516024e87db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba6a4646668af16a269147b3eba00ccc = $(`<div id="html_ba6a4646668af16a269147b3eba00ccc" style="width: 100.0%; height: 100.0%;">União Brasil Fortaleza</div>`)[0];
+                popup_f6639299fec8dce7ae2c8516024e87db.setContent(html_ba6a4646668af16a269147b3eba00ccc);
+            
+        
+
+        marker_0a6a516802ab9366dce7ca03efe89657.bindPopup(popup_f6639299fec8dce7ae2c8516024e87db)
+        ;
+
+        
+    
+    
+            var marker_22b309d2f93a84e9da9d836f4d70e168 = L.marker(
+                [-3.7550056, -38.5518192],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_509b33aaf26d22976da2e5a15ab9fe37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22b309d2f93a84e9da9d836f4d70e168.setIcon(icon_509b33aaf26d22976da2e5a15ab9fe37);
+        
+    
+        var popup_30907bfb16eb4632240065093844f02a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5429276bec8c4ad7c9143b0f6d05fa1 = $(`<div id="html_c5429276bec8c4ad7c9143b0f6d05fa1" style="width: 100.0%; height: 100.0%;">Republicanos Ceará</div>`)[0];
+                popup_30907bfb16eb4632240065093844f02a.setContent(html_c5429276bec8c4ad7c9143b0f6d05fa1);
+            
+        
+
+        marker_22b309d2f93a84e9da9d836f4d70e168.bindPopup(popup_30907bfb16eb4632240065093844f02a)
+        ;
+
+        
+    
+    
+            var marker_70167ee5a6b8b46e8820f9d952a762e7 = L.marker(
+                [-3.75280875, -38.5268741],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_36928e8699b0d45469fa6d89d8c7b029 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70167ee5a6b8b46e8820f9d952a762e7.setIcon(icon_36928e8699b0d45469fa6d89d8c7b029);
+        
+    
+        var popup_14f62cee6841dbbfa54a187070624715 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f00b6aeed62a88605fee65faaec301e = $(`<div id="html_5f00b6aeed62a88605fee65faaec301e" style="width: 100.0%; height: 100.0%;">Colégio Santo Tomás de Aquino</div>`)[0];
+                popup_14f62cee6841dbbfa54a187070624715.setContent(html_5f00b6aeed62a88605fee65faaec301e);
+            
+        
+
+        marker_70167ee5a6b8b46e8820f9d952a762e7.bindPopup(popup_14f62cee6841dbbfa54a187070624715)
+        ;
+
+        
+    
+    
+            var marker_da9e590521605af05aa1f75a8dae919b = L.marker(
+                [-3.7456458, -38.50430373759524],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_cec6fe06931a8c9c45b0848922a4b123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da9e590521605af05aa1f75a8dae919b.setIcon(icon_cec6fe06931a8c9c45b0848922a4b123);
+        
+    
+        var popup_eaf3c8b2e368878d92d60285d9e1fbeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abae607da53bed2e4a92d427d680924f = $(`<div id="html_abae607da53bed2e4a92d427d680924f" style="width: 100.0%; height: 100.0%;">Partido Verde - Ceará</div>`)[0];
+                popup_eaf3c8b2e368878d92d60285d9e1fbeb.setContent(html_abae607da53bed2e4a92d427d680924f);
+            
+        
+
+        marker_da9e590521605af05aa1f75a8dae919b.bindPopup(popup_eaf3c8b2e368878d92d60285d9e1fbeb)
+        ;
+
+        
+    
+    
+            var marker_4261b1ebdab49acbf1f877e725d45305 = L.marker(
+                [-3.7441152, -38.5008456],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_e34bc95b504f1b12621ccdf5bc7c9eec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4261b1ebdab49acbf1f877e725d45305.setIcon(icon_e34bc95b504f1b12621ccdf5bc7c9eec);
+        
+    
+        var popup_0ba1044458b81625198bfd9d8e71ec41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03c5a5df176d32315bc0cb122c4f453a = $(`<div id="html_03c5a5df176d32315bc0cb122c4f453a" style="width: 100.0%; height: 100.0%;">Colégio Lourenço Filho</div>`)[0];
+                popup_0ba1044458b81625198bfd9d8e71ec41.setContent(html_03c5a5df176d32315bc0cb122c4f453a);
+            
+        
+
+        marker_4261b1ebdab49acbf1f877e725d45305.bindPopup(popup_0ba1044458b81625198bfd9d8e71ec41)
+        ;
+
+        
+    
+    
+            var marker_9a923a3db61ef3a23e081296a51e3ac0 = L.marker(
+                [-3.7554302, -38.48876588454546],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_6d067b29b027aaf3009969ae65419064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a923a3db61ef3a23e081296a51e3ac0.setIcon(icon_6d067b29b027aaf3009969ae65419064);
+        
+    
+        var popup_32311add811309611be23eb463ca405c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b505b942e84f17f3e0bc1653321fb39 = $(`<div id="html_2b505b942e84f17f3e0bc1653321fb39" style="width: 100.0%; height: 100.0%;">Outback Steakhouse</div>`)[0];
+                popup_32311add811309611be23eb463ca405c.setContent(html_2b505b942e84f17f3e0bc1653321fb39);
+            
+        
+
+        marker_9a923a3db61ef3a23e081296a51e3ac0.bindPopup(popup_32311add811309611be23eb463ca405c)
+        ;
+
+        
+    
+    
+            var marker_0fe93bb2cfa7d35298237c33442cbb9d = L.marker(
+                [-3.7554302, -38.48876588454546],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_752af735c88bda539f969c2b7563bfe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fe93bb2cfa7d35298237c33442cbb9d.setIcon(icon_752af735c88bda539f969c2b7563bfe9);
+        
+    
+        var popup_11b83fb5c8e3be2683e48d4e5ab916d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eedb03fa3845e40ab4cda8134b37f0a1 = $(`<div id="html_eedb03fa3845e40ab4cda8134b37f0a1" style="width: 100.0%; height: 100.0%;">Santa Grelha Iguatemi</div>`)[0];
+                popup_11b83fb5c8e3be2683e48d4e5ab916d8.setContent(html_eedb03fa3845e40ab4cda8134b37f0a1);
+            
+        
+
+        marker_0fe93bb2cfa7d35298237c33442cbb9d.bindPopup(popup_11b83fb5c8e3be2683e48d4e5ab916d8)
+        ;
+
+        
+    
+    
+            var marker_a0e19638ebb72caf82be269aee5dc5be = L.marker(
+                [-3.7445972, -38.4894517],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_30816566ac5ecd96b1c97ecca2888725 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0e19638ebb72caf82be269aee5dc5be.setIcon(icon_30816566ac5ecd96b1c97ecca2888725);
+        
+    
+        var popup_e622a8dd5093517a5c6c2cb0ef12e9bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9eb207870c1ae2d97fb6a351a5b7c11 = $(`<div id="html_d9eb207870c1ae2d97fb6a351a5b7c11" style="width: 100.0%; height: 100.0%;">Colégio Antares</div>`)[0];
+                popup_e622a8dd5093517a5c6c2cb0ef12e9bf.setContent(html_d9eb207870c1ae2d97fb6a351a5b7c11);
+            
+        
+
+        marker_a0e19638ebb72caf82be269aee5dc5be.bindPopup(popup_e622a8dd5093517a5c6c2cb0ef12e9bf)
+        ;
+
+        
+    
+    
+            var marker_6ec2009abe88b54d14198746567e62cb = L.marker(
+                [-3.7361949, -38.4982987],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_9fa6f2c5c51a5b32c1e800cb0fef7f7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6ec2009abe88b54d14198746567e62cb.setIcon(icon_9fa6f2c5c51a5b32c1e800cb0fef7f7f);
+        
+    
+        var popup_0a0ea8f9fde1422985e52e0e31cbcc98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a241278abc68f1b8bd8490a83e54b5bd = $(`<div id="html_a241278abc68f1b8bd8490a83e54b5bd" style="width: 100.0%; height: 100.0%;">Diretório Estadual do Partido Novo Ceará</div>`)[0];
+                popup_0a0ea8f9fde1422985e52e0e31cbcc98.setContent(html_a241278abc68f1b8bd8490a83e54b5bd);
+            
+        
+
+        marker_6ec2009abe88b54d14198746567e62cb.bindPopup(popup_0a0ea8f9fde1422985e52e0e31cbcc98)
+        ;
+
+        
+    
+    
+            var marker_f265b116ab35de28b9cccd8149376b0c = L.marker(
+                [-3.7262796, -38.5003948],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_5bf2064c574cd73ee3781c4eb6657dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f265b116ab35de28b9cccd8149376b0c.setIcon(icon_5bf2064c574cd73ee3781c4eb6657dbd);
+        
+    
+        var popup_796c404b254ff9444d518d626037afe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2946c11f76c85949822dbe375c3030c3 = $(`<div id="html_2946c11f76c85949822dbe375c3030c3" style="width: 100.0%; height: 100.0%;">Partido Democrático Trabalhista | PDT Ceará</div>`)[0];
+                popup_796c404b254ff9444d518d626037afe0.setContent(html_2946c11f76c85949822dbe375c3030c3);
+            
+        
+
+        marker_f265b116ab35de28b9cccd8149376b0c.bindPopup(popup_796c404b254ff9444d518d626037afe0)
+        ;
+
+        
+    
+    
+            var marker_cf499c5b5ddc1ef54a901ba811a0825c = L.marker(
+                [-3.7259989, -38.4934804],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_09a2f66f559f01e8f68831f01fc98c4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf499c5b5ddc1ef54a901ba811a0825c.setIcon(icon_09a2f66f559f01e8f68831f01fc98c4e);
+        
+    
+        var popup_532fae91c61d9af0b0e7483949da8e82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07f0757e030035c65a8a40a0dbf90435 = $(`<div id="html_07f0757e030035c65a8a40a0dbf90435" style="width: 100.0%; height: 100.0%;">Colégio Master</div>`)[0];
+                popup_532fae91c61d9af0b0e7483949da8e82.setContent(html_07f0757e030035c65a8a40a0dbf90435);
+            
+        
+
+        marker_cf499c5b5ddc1ef54a901ba811a0825c.bindPopup(popup_532fae91c61d9af0b0e7483949da8e82)
+        ;
+
+        
+    
+    
+            var marker_4d360ca15ee3d7c3cedace981d91993d = L.marker(
+                [-3.72834585, -38.491197893261294],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_6b949192642f905bf3fabd0861d14fc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d360ca15ee3d7c3cedace981d91993d.setIcon(icon_6b949192642f905bf3fabd0861d14fc9);
+        
+    
+        var popup_6f944195ed998aaadc7fc9d48efc95a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40bec587422e3e00c9b226f0956e6b0c = $(`<div id="html_40bec587422e3e00c9b226f0956e6b0c" style="width: 100.0%; height: 100.0%;">MDB</div>`)[0];
+                popup_6f944195ed998aaadc7fc9d48efc95a2.setContent(html_40bec587422e3e00c9b226f0956e6b0c);
+            
+        
+
+        marker_4d360ca15ee3d7c3cedace981d91993d.bindPopup(popup_6f944195ed998aaadc7fc9d48efc95a2)
+        ;
+
+        
+    
+    
+            var marker_79f5915de9c27abb22cd3686085028d1 = L.marker(
+                [-3.7237569, -38.4874985],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_367772216c8d740bb078f8e6448c5789 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_79f5915de9c27abb22cd3686085028d1.setIcon(icon_367772216c8d740bb078f8e6448c5789);
+        
+    
+        var popup_1199a5cb3e411331ea0bb02188e93d66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a445370e4a5185e226f5d5b668b80da = $(`<div id="html_7a445370e4a5185e226f5d5b668b80da" style="width: 100.0%; height: 100.0%;">Coco Bambu</div>`)[0];
+                popup_1199a5cb3e411331ea0bb02188e93d66.setContent(html_7a445370e4a5185e226f5d5b668b80da);
+            
+        
+
+        marker_79f5915de9c27abb22cd3686085028d1.bindPopup(popup_1199a5cb3e411331ea0bb02188e93d66)
+        ;
+
+        
+    
+    
+            var marker_b851526564832f0d4294e82fe6d0efa9 = L.marker(
+                [-3.7315354, -38.487188],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_238b09be5c938043eaf831405ddd7165 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b851526564832f0d4294e82fe6d0efa9.setIcon(icon_238b09be5c938043eaf831405ddd7165);
+        
+    
+        var popup_3c36c7c66c113b8ad14870393dd452c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aa1db58fcb13fbd75a36225d9af1bdf = $(`<div id="html_0aa1db58fcb13fbd75a36225d9af1bdf" style="width: 100.0%; height: 100.0%;">Colégio Farias Brito Central</div>`)[0];
+                popup_3c36c7c66c113b8ad14870393dd452c2.setContent(html_0aa1db58fcb13fbd75a36225d9af1bdf);
+            
+        
+
+        marker_b851526564832f0d4294e82fe6d0efa9.bindPopup(popup_3c36c7c66c113b8ad14870393dd452c2)
+        ;
+
+        
+    
+    
+            var marker_6bce0f436dc9356f82006ffb15c678d9 = L.marker(
+                [-3.7315851, -38.4892367],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_84a86690f18ee8d39f16b9a2a2c0e9a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bce0f436dc9356f82006ffb15c678d9.setIcon(icon_84a86690f18ee8d39f16b9a2a2c0e9a3);
+        
+    
+        var popup_6a9608663c45c6de84ebddbd5047d169 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67de6c5d52476e013aff147336b7369f = $(`<div id="html_67de6c5d52476e013aff147336b7369f" style="width: 100.0%; height: 100.0%;">Misaki</div>`)[0];
+                popup_6a9608663c45c6de84ebddbd5047d169.setContent(html_67de6c5d52476e013aff147336b7369f);
+            
+        
+
+        marker_6bce0f436dc9356f82006ffb15c678d9.bindPopup(popup_6a9608663c45c6de84ebddbd5047d169)
+        ;
+
+        
+    
+    
+            var marker_f547dba8cba09c5389838154e7ee9e2d = L.marker(
+                [-3.7326931, -38.4894899],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_0864018634928c6addd69e3952791f59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f547dba8cba09c5389838154e7ee9e2d.setIcon(icon_0864018634928c6addd69e3952791f59);
+        
+    
+        var popup_b63c06923f5736beb6ff8c1a9459f943 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9880a9f737410add6d5b10622ba6736d = $(`<div id="html_9880a9f737410add6d5b10622ba6736d" style="width: 100.0%; height: 100.0%;">Cervejaria Turatti</div>`)[0];
+                popup_b63c06923f5736beb6ff8c1a9459f943.setContent(html_9880a9f737410add6d5b10622ba6736d);
+            
+        
+
+        marker_f547dba8cba09c5389838154e7ee9e2d.bindPopup(popup_b63c06923f5736beb6ff8c1a9459f943)
+        ;
+
+        
+    
+    
+            var marker_4d4451b6955e41e52143837aee6408aa = L.marker(
+                [-3.7357977, -38.4904025717601],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_9ead095f5ac8b2337c79b39e17608ba6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d4451b6955e41e52143837aee6408aa.setIcon(icon_9ead095f5ac8b2337c79b39e17608ba6);
+        
+    
+        var popup_d47a022e7880476a94de82fc188beccf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87d513c4c426f35f6782879d041a9b07 = $(`<div id="html_87d513c4c426f35f6782879d041a9b07" style="width: 100.0%; height: 100.0%;">Avante</div>`)[0];
+                popup_d47a022e7880476a94de82fc188beccf.setContent(html_87d513c4c426f35f6782879d041a9b07);
+            
+        
+
+        marker_4d4451b6955e41e52143837aee6408aa.bindPopup(popup_d47a022e7880476a94de82fc188beccf)
+        ;
+
+        
+    
+    
+            var marker_a6865df97571cb49ea1586d52c75ca55 = L.marker(
+                [-3.7351584, -38.4915725],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_e7ec2af0d89d64d8abd6bea39c0fba10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6865df97571cb49ea1586d52c75ca55.setIcon(icon_e7ec2af0d89d64d8abd6bea39c0fba10);
+        
+    
+        var popup_454b089d8cdddd1c7666e0400f33baa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbb777add771b0ff78f44f46e813b597 = $(`<div id="html_fbb777add771b0ff78f44f46e813b597" style="width: 100.0%; height: 100.0%;">Mangue Azul</div>`)[0];
+                popup_454b089d8cdddd1c7666e0400f33baa1.setContent(html_fbb777add771b0ff78f44f46e813b597);
+            
+        
+
+        marker_a6865df97571cb49ea1586d52c75ca55.bindPopup(popup_454b089d8cdddd1c7666e0400f33baa1)
+        ;
+
+        
+    
+    
+            var marker_2026c52469c9f55664599c72e36d2cd9 = L.marker(
+                [-3.73171205, -38.572471207354525],
+                {}
+            ).addTo(marker_cluster_fedb064b399204040d6f9df4172e02b0);
+        
+    
+            var icon_e7167d2c59dfaef83585843199f467da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2026c52469c9f55664599c72e36d2cd9.setIcon(icon_e7167d2c59dfaef83585843199f467da);
+        
+    
+        var popup_e21c342253395319784470602bcbb518 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8be96e78295b290d296844b98dcbaff9 = $(`<div id="html_8be96e78295b290d296844b98dcbaff9" style="width: 100.0%; height: 100.0%;">Servprint</div>`)[0];
+                popup_e21c342253395319784470602bcbb518.setContent(html_8be96e78295b290d296844b98dcbaff9);
+            
+        
+
+        marker_2026c52469c9f55664599c72e36d2cd9.bindPopup(popup_e21c342253395319784470602bcbb518)
+        ;
+
+        
+    
+    
+            marker_cluster_fedb064b399204040d6f9df4172e02b0.addTo(map_0b7326e548ef335969a3b567c7400015);
+        
+    
+            var poly_line_fe462e2920e857808639ef9a5210914a = L.polyline(
+                [[-3.73171205, -38.572471207354525], [-3.7354033, -38.6583865], [-3.7935838, -38.5697252], [-3.7887883, -38.4793656942343], [-3.75407425, -38.44513401453182], [-3.7460166, -38.4678484], [-3.7396357, -38.4881497], [-3.7401119, -38.4908445], [-3.7405435, -38.4986338], [-3.7343695, -38.5105147], [-3.7207344, -38.5114094], [-3.7368896, -38.5352833], [-3.7352047, -38.5496316], [-3.73801705, -38.56220127725775], [-3.7550056, -38.5518192], [-3.75280875, -38.5268741], [-3.7456458, -38.50430373759524], [-3.7441152, -38.5008456], [-3.7554302, -38.48876588454546], [-3.7554302, -38.48876588454546], [-3.7445972, -38.4894517], [-3.7361949, -38.4982987], [-3.7262796, -38.5003948], [-3.7259989, -38.4934804], [-3.72834585, -38.491197893261294], [-3.7237569, -38.4874985], [-3.7315354, -38.487188], [-3.7315851, -38.4892367], [-3.7326931, -38.4894899], [-3.7357977, -38.4904025717601], [-3.7351584, -38.4915725], [-3.73171205, -38.572471207354525]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_0b7326e548ef335969a3b567c7400015);
+        
+</script>
+</html>

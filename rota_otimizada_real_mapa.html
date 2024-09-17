@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_231b460c6da0d95872f9733d05741dfe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_231b460c6da0d95872f9733d05741dfe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_231b460c6da0d95872f9733d05741dfe = L.map(
+                "map_231b460c6da0d95872f9733d05741dfe",
+                {
+                    center: [-3.741474234375, -38.51192676788877],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_87e40c965eccc69d72be67e3656925e5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_87e40c965eccc69d72be67e3656925e5.addTo(map_231b460c6da0d95872f9733d05741dfe);
+        
+    
+            var marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_c5f549d59e5caf3a195cada8249c4534 = L.marker(
+                [-3.73171205, -38.572471207354525],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_060b756d72192c5510eb20e9bdaa48e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5f549d59e5caf3a195cada8249c4534.setIcon(icon_060b756d72192c5510eb20e9bdaa48e2);
+        
+    
+        var popup_63f51d788a9f5c68d315554edff2b8da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b354c04b28620efac4caaa94f6a26a1 = $(`<div id="html_7b354c04b28620efac4caaa94f6a26a1" style="width: 100.0%; height: 100.0%;">Servprint</div>`)[0];
+                popup_63f51d788a9f5c68d315554edff2b8da.setContent(html_7b354c04b28620efac4caaa94f6a26a1);
+            
+        
+
+        marker_c5f549d59e5caf3a195cada8249c4534.bindPopup(popup_63f51d788a9f5c68d315554edff2b8da)
+        ;
+
+        
+    
+    
+            var marker_d7188beb1961384df02ffe2e26628c32 = L.marker(
+                [-3.7354033, -38.6583865],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_bec574f90a67c626ac75efb5c993d4c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7188beb1961384df02ffe2e26628c32.setIcon(icon_bec574f90a67c626ac75efb5c993d4c9);
+        
+    
+        var popup_cc5c0c6a37dd220d4488450fde4c7d43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73573dc696a47cd6eb4634e5478b8775 = $(`<div id="html_73573dc696a47cd6eb4634e5478b8775" style="width: 100.0%; height: 100.0%;">Partido Liberal - Comitê de Caucaia</div>`)[0];
+                popup_cc5c0c6a37dd220d4488450fde4c7d43.setContent(html_73573dc696a47cd6eb4634e5478b8775);
+            
+        
+
+        marker_d7188beb1961384df02ffe2e26628c32.bindPopup(popup_cc5c0c6a37dd220d4488450fde4c7d43)
+        ;
+
+        
+    
+    
+            var marker_4fff98814355e436c397c77ac377df53 = L.marker(
+                [-3.7935838, -38.5697252],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_c9625f59415c7e1b95077130cb906118 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4fff98814355e436c397c77ac377df53.setIcon(icon_c9625f59415c7e1b95077130cb906118);
+        
+    
+        var popup_8518fb1c85b7dd036bc589969f1269e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e89f91e8759877cfe15eaa8e40eb3cfd = $(`<div id="html_e89f91e8759877cfe15eaa8e40eb3cfd" style="width: 100.0%; height: 100.0%;">Colégio Provecto</div>`)[0];
+                popup_8518fb1c85b7dd036bc589969f1269e2.setContent(html_e89f91e8759877cfe15eaa8e40eb3cfd);
+            
+        
+
+        marker_4fff98814355e436c397c77ac377df53.bindPopup(popup_8518fb1c85b7dd036bc589969f1269e2)
+        ;
+
+        
+    
+    
+            var marker_4dbbd7c36a1f244ca239ff03a7155924 = L.marker(
+                [-3.7887883, -38.4793656942343],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_f57e14ea4d948c9908ca770ff10e1b37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4dbbd7c36a1f244ca239ff03a7155924.setIcon(icon_f57e14ea4d948c9908ca770ff10e1b37);
+        
+    
+        var popup_743276a1dd45b60547946d1357f42c4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10686193d8bbcbf9bc9e30a0e8f2260b = $(`<div id="html_10686193d8bbcbf9bc9e30a0e8f2260b" style="width: 100.0%; height: 100.0%;">Colégio Ari de Sá Cavalcante</div>`)[0];
+                popup_743276a1dd45b60547946d1357f42c4d.setContent(html_10686193d8bbcbf9bc9e30a0e8f2260b);
+            
+        
+
+        marker_4dbbd7c36a1f244ca239ff03a7155924.bindPopup(popup_743276a1dd45b60547946d1357f42c4d)
+        ;
+
+        
+    
+    
+            var marker_e60a008052d7832cd15abfb8b30fde9a = L.marker(
+                [-3.75407425, -38.44513401453182],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_858bc98992a5aa8e86e7d18f5a1b9503 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e60a008052d7832cd15abfb8b30fde9a.setIcon(icon_858bc98992a5aa8e86e7d18f5a1b9503);
+        
+    
+        var popup_29a2c8a6b7bda991db7a3f0ed102396b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63b78f8f18aff92884ea8d903e129107 = $(`<div id="html_63b78f8f18aff92884ea8d903e129107" style="width: 100.0%; height: 100.0%;">Chico do Caranguejo</div>`)[0];
+                popup_29a2c8a6b7bda991db7a3f0ed102396b.setContent(html_63b78f8f18aff92884ea8d903e129107);
+            
+        
+
+        marker_e60a008052d7832cd15abfb8b30fde9a.bindPopup(popup_29a2c8a6b7bda991db7a3f0ed102396b)
+        ;
+
+        
+    
+    
+            var marker_6d596b54e714231c6afc7bd8a139c277 = L.marker(
+                [-3.7460166, -38.4678484],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_06d5c1d4b70d391b99b0b1cc4cf75a20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d596b54e714231c6afc7bd8a139c277.setIcon(icon_06d5c1d4b70d391b99b0b1cc4cf75a20);
+        
+    
+        var popup_f9a9831a448802fb6a0f21cad95f5e76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_929e02a3aca70edb8363d1580528d67f = $(`<div id="html_929e02a3aca70edb8363d1580528d67f" style="width: 100.0%; height: 100.0%;">Colégio Christus</div>`)[0];
+                popup_f9a9831a448802fb6a0f21cad95f5e76.setContent(html_929e02a3aca70edb8363d1580528d67f);
+            
+        
+
+        marker_6d596b54e714231c6afc7bd8a139c277.bindPopup(popup_f9a9831a448802fb6a0f21cad95f5e76)
+        ;
+
+        
+    
+    
+            var marker_1fd80a6db2f625a398664f7896125e62 = L.marker(
+                [-3.7396357, -38.4881497],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_3eb9f1c5c059de08dfaa5b1121e92bc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fd80a6db2f625a398664f7896125e62.setIcon(icon_3eb9f1c5c059de08dfaa5b1121e92bc7);
+        
+    
+        var popup_5ab35d82fb00bafa9c7f5de7b821c483 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8e568426399c4bf5fcb82e51802fe4e = $(`<div id="html_f8e568426399c4bf5fcb82e51802fe4e" style="width: 100.0%; height: 100.0%;">Colégio 7 de Setembro</div>`)[0];
+                popup_5ab35d82fb00bafa9c7f5de7b821c483.setContent(html_f8e568426399c4bf5fcb82e51802fe4e);
+            
+        
+
+        marker_1fd80a6db2f625a398664f7896125e62.bindPopup(popup_5ab35d82fb00bafa9c7f5de7b821c483)
+        ;
+
+        
+    
+    
+            var marker_52b59353b3e698429d42b175f270337b = L.marker(
+                [-3.7401119, -38.4908445],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_965f4b69c7a59c48025dadcd65ac24e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_52b59353b3e698429d42b175f270337b.setIcon(icon_965f4b69c7a59c48025dadcd65ac24e8);
+        
+    
+        var popup_53ed937d807248c5a07f70d1bda57508 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa3d44c8a1129ee071c19024db61a303 = $(`<div id="html_aa3d44c8a1129ee071c19024db61a303" style="width: 100.0%; height: 100.0%;">PSDB Partido da Social Democracia Brasileira</div>`)[0];
+                popup_53ed937d807248c5a07f70d1bda57508.setContent(html_aa3d44c8a1129ee071c19024db61a303);
+            
+        
+
+        marker_52b59353b3e698429d42b175f270337b.bindPopup(popup_53ed937d807248c5a07f70d1bda57508)
+        ;
+
+        
+    
+    
+            var marker_b160348c7c461760c4148d4c7d59748d = L.marker(
+                [-3.7405435, -38.4986338],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_2241d886aa695d4d553cf4938383d1e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b160348c7c461760c4148d4c7d59748d.setIcon(icon_2241d886aa695d4d553cf4938383d1e8);
+        
+    
+        var popup_a295678348e33bdab57c758d6266eb56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_007888842bfafbb77edadc454f70136f = $(`<div id="html_007888842bfafbb77edadc454f70136f" style="width: 100.0%; height: 100.0%;">Colégio Santa Cecília</div>`)[0];
+                popup_a295678348e33bdab57c758d6266eb56.setContent(html_007888842bfafbb77edadc454f70136f);
+            
+        
+
+        marker_b160348c7c461760c4148d4c7d59748d.bindPopup(popup_a295678348e33bdab57c758d6266eb56)
+        ;
+
+        
+    
+    
+            var marker_1995aaecd7bfe38bf6c12e7c76cc8aaf = L.marker(
+                [-3.7343695, -38.5105147],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_ff1ec5ac412be6aefec7c89e95a7e173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1995aaecd7bfe38bf6c12e7c76cc8aaf.setIcon(icon_ff1ec5ac412be6aefec7c89e95a7e173);
+        
+    
+        var popup_1b23ddab3b3f1b84de4bc0bbaa9a9052 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fff97889db741def46548fc7c2f7b5c4 = $(`<div id="html_fff97889db741def46548fc7c2f7b5c4" style="width: 100.0%; height: 100.0%;">Cantinho do Frango</div>`)[0];
+                popup_1b23ddab3b3f1b84de4bc0bbaa9a9052.setContent(html_fff97889db741def46548fc7c2f7b5c4);
+            
+        
+
+        marker_1995aaecd7bfe38bf6c12e7c76cc8aaf.bindPopup(popup_1b23ddab3b3f1b84de4bc0bbaa9a9052)
+        ;
+
+        
+    
+    
+            var marker_51277ab439a4986d612308d27cecff1b = L.marker(
+                [-3.7207344, -38.5114094],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_8524e86a9e1a864367cb9481ca817097 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_51277ab439a4986d612308d27cecff1b.setIcon(icon_8524e86a9e1a864367cb9481ca817097);
+        
+    
+        var popup_fe0b2293943f2963377c858aef4e266b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1244d8549bf0d6638771db8e456a1cc6 = $(`<div id="html_1244d8549bf0d6638771db8e456a1cc6" style="width: 100.0%; height: 100.0%;">Restaurante Brazão</div>`)[0];
+                popup_fe0b2293943f2963377c858aef4e266b.setContent(html_1244d8549bf0d6638771db8e456a1cc6);
+            
+        
+
+        marker_51277ab439a4986d612308d27cecff1b.bindPopup(popup_fe0b2293943f2963377c858aef4e266b)
+        ;
+
+        
+    
+    
+            var marker_13648952ac3db9ab04a839d52c92b4d1 = L.marker(
+                [-3.7368896, -38.5352833],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_0e87c13c505dbb9618a1d813897da7a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_13648952ac3db9ab04a839d52c92b4d1.setIcon(icon_0e87c13c505dbb9618a1d813897da7a5);
+        
+    
+        var popup_067ab4292cc97c2f5dfff6653cc699ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b097cd61513952c94319f937593c089 = $(`<div id="html_1b097cd61513952c94319f937593c089" style="width: 100.0%; height: 100.0%;">Partido dos Trabalhadores Diretório Estadual do Ceará</div>`)[0];
+                popup_067ab4292cc97c2f5dfff6653cc699ce.setContent(html_1b097cd61513952c94319f937593c089);
+            
+        
+
+        marker_13648952ac3db9ab04a839d52c92b4d1.bindPopup(popup_067ab4292cc97c2f5dfff6653cc699ce)
+        ;
+
+        
+    
+    
+            var marker_3f70d44b6a23911acea676a59efa3971 = L.marker(
+                [-3.7352047, -38.5496316],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_4cff8cbff9dd8c08596c6511ae45eba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f70d44b6a23911acea676a59efa3971.setIcon(icon_4cff8cbff9dd8c08596c6511ae45eba0);
+        
+    
+        var popup_cf717740601e831c7302668f18c25de7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f63185e61c3bc03347fa65ba943a0863 = $(`<div id="html_f63185e61c3bc03347fa65ba943a0863" style="width: 100.0%; height: 100.0%;">Carneiro do Ordones</div>`)[0];
+                popup_cf717740601e831c7302668f18c25de7.setContent(html_f63185e61c3bc03347fa65ba943a0863);
+            
+        
+
+        marker_3f70d44b6a23911acea676a59efa3971.bindPopup(popup_cf717740601e831c7302668f18c25de7)
+        ;
+
+        
+    
+    
+            var marker_176592a482683eb8ab1767ba5cf2c824 = L.marker(
+                [-3.73801705, -38.56220127725775],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_c7ea703ca043e7e35bc6b8495f0c08d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_176592a482683eb8ab1767ba5cf2c824.setIcon(icon_c7ea703ca043e7e35bc6b8495f0c08d3);
+        
+    
+        var popup_67d6d61a5a8840b129db935efa04c048 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_262a9f2116a99d3d9dab5aab267586cf = $(`<div id="html_262a9f2116a99d3d9dab5aab267586cf" style="width: 100.0%; height: 100.0%;">União Brasil Fortaleza</div>`)[0];
+                popup_67d6d61a5a8840b129db935efa04c048.setContent(html_262a9f2116a99d3d9dab5aab267586cf);
+            
+        
+
+        marker_176592a482683eb8ab1767ba5cf2c824.bindPopup(popup_67d6d61a5a8840b129db935efa04c048)
+        ;
+
+        
+    
+    
+            var marker_c1ac76de0451e50c7716179bcd2d9d72 = L.marker(
+                [-3.7550056, -38.5518192],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_8574bcff968c845eadbbb538ec286d2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1ac76de0451e50c7716179bcd2d9d72.setIcon(icon_8574bcff968c845eadbbb538ec286d2c);
+        
+    
+        var popup_bc996a07519c6623099f61b14034f244 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07cecb9fd81e49f91558a43b2aaebd95 = $(`<div id="html_07cecb9fd81e49f91558a43b2aaebd95" style="width: 100.0%; height: 100.0%;">Republicanos Ceará</div>`)[0];
+                popup_bc996a07519c6623099f61b14034f244.setContent(html_07cecb9fd81e49f91558a43b2aaebd95);
+            
+        
+
+        marker_c1ac76de0451e50c7716179bcd2d9d72.bindPopup(popup_bc996a07519c6623099f61b14034f244)
+        ;
+
+        
+    
+    
+            var marker_ed8d45179588f5d9010a2ffb8d0d6b62 = L.marker(
+                [-3.75280875, -38.5268741],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_1524ed7ddad06053081365847fc096e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed8d45179588f5d9010a2ffb8d0d6b62.setIcon(icon_1524ed7ddad06053081365847fc096e4);
+        
+    
+        var popup_1d0b14b276f4205740e1f2c9277a4d39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_281d4055666be644ae1afee500689eb2 = $(`<div id="html_281d4055666be644ae1afee500689eb2" style="width: 100.0%; height: 100.0%;">Colégio Santo Tomás de Aquino</div>`)[0];
+                popup_1d0b14b276f4205740e1f2c9277a4d39.setContent(html_281d4055666be644ae1afee500689eb2);
+            
+        
+
+        marker_ed8d45179588f5d9010a2ffb8d0d6b62.bindPopup(popup_1d0b14b276f4205740e1f2c9277a4d39)
+        ;
+
+        
+    
+    
+            var marker_78da98fccb42d512d865692292315e34 = L.marker(
+                [-3.7456458, -38.50430373759524],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_2b9a989633eba73f33dccf352583d644 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78da98fccb42d512d865692292315e34.setIcon(icon_2b9a989633eba73f33dccf352583d644);
+        
+    
+        var popup_235385416903f14b1d9b889fbb1d0fa5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0516b4f679ccf88e59967a768d26c082 = $(`<div id="html_0516b4f679ccf88e59967a768d26c082" style="width: 100.0%; height: 100.0%;">Partido Verde - Ceará</div>`)[0];
+                popup_235385416903f14b1d9b889fbb1d0fa5.setContent(html_0516b4f679ccf88e59967a768d26c082);
+            
+        
+
+        marker_78da98fccb42d512d865692292315e34.bindPopup(popup_235385416903f14b1d9b889fbb1d0fa5)
+        ;
+
+        
+    
+    
+            var marker_6e37d379db22574f071870145cb7f5e0 = L.marker(
+                [-3.7441152, -38.5008456],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_2f20f8e7ef3529da624082b1b419b31d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e37d379db22574f071870145cb7f5e0.setIcon(icon_2f20f8e7ef3529da624082b1b419b31d);
+        
+    
+        var popup_0fd6a2a637e6e7e8fed158ab33eb57b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f9a91c9370c4b77c134924690436458 = $(`<div id="html_7f9a91c9370c4b77c134924690436458" style="width: 100.0%; height: 100.0%;">Colégio Lourenço Filho</div>`)[0];
+                popup_0fd6a2a637e6e7e8fed158ab33eb57b2.setContent(html_7f9a91c9370c4b77c134924690436458);
+            
+        
+
+        marker_6e37d379db22574f071870145cb7f5e0.bindPopup(popup_0fd6a2a637e6e7e8fed158ab33eb57b2)
+        ;
+
+        
+    
+    
+            var marker_3dd4ff4865e3ee37d1cc3f917eaa69f3 = L.marker(
+                [-3.7554302, -38.48876588454546],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_3c5874ee4e8ab209bdfaf7422b159ff3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3dd4ff4865e3ee37d1cc3f917eaa69f3.setIcon(icon_3c5874ee4e8ab209bdfaf7422b159ff3);
+        
+    
+        var popup_9c78f15d546f97bbb8506f629bea860a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e64f91ead3f44841025693181e60e5d = $(`<div id="html_7e64f91ead3f44841025693181e60e5d" style="width: 100.0%; height: 100.0%;">Outback Steakhouse</div>`)[0];
+                popup_9c78f15d546f97bbb8506f629bea860a.setContent(html_7e64f91ead3f44841025693181e60e5d);
+            
+        
+
+        marker_3dd4ff4865e3ee37d1cc3f917eaa69f3.bindPopup(popup_9c78f15d546f97bbb8506f629bea860a)
+        ;
+
+        
+    
+    
+            var marker_162bab39d2f1d2b3ae4251043ead2ee5 = L.marker(
+                [-3.7554302, -38.48876588454546],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_7b4235126f82c5c007c6e3ffe1d9a078 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_162bab39d2f1d2b3ae4251043ead2ee5.setIcon(icon_7b4235126f82c5c007c6e3ffe1d9a078);
+        
+    
+        var popup_6f9a77b2036d45807c13c420732c96cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4545e21342b8124952574d98e5c73a0 = $(`<div id="html_f4545e21342b8124952574d98e5c73a0" style="width: 100.0%; height: 100.0%;">Santa Grelha Iguatemi</div>`)[0];
+                popup_6f9a77b2036d45807c13c420732c96cc.setContent(html_f4545e21342b8124952574d98e5c73a0);
+            
+        
+
+        marker_162bab39d2f1d2b3ae4251043ead2ee5.bindPopup(popup_6f9a77b2036d45807c13c420732c96cc)
+        ;
+
+        
+    
+    
+            var marker_da728a4c5a7e98f2f96635f50f92cf89 = L.marker(
+                [-3.7445972, -38.4894517],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_226fc2b9ac3e666ad998c483ab70b111 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da728a4c5a7e98f2f96635f50f92cf89.setIcon(icon_226fc2b9ac3e666ad998c483ab70b111);
+        
+    
+        var popup_67c3310f789a5ee17ed59dd92b2255d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13146aa20efaca6613fbe4dd71dcce83 = $(`<div id="html_13146aa20efaca6613fbe4dd71dcce83" style="width: 100.0%; height: 100.0%;">Colégio Antares</div>`)[0];
+                popup_67c3310f789a5ee17ed59dd92b2255d3.setContent(html_13146aa20efaca6613fbe4dd71dcce83);
+            
+        
+
+        marker_da728a4c5a7e98f2f96635f50f92cf89.bindPopup(popup_67c3310f789a5ee17ed59dd92b2255d3)
+        ;
+
+        
+    
+    
+            var marker_c7635d4263cac8cae5984ef45f154ccf = L.marker(
+                [-3.7361949, -38.4982987],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_e70e61f6aaecfbec0e33fe160477ee78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7635d4263cac8cae5984ef45f154ccf.setIcon(icon_e70e61f6aaecfbec0e33fe160477ee78);
+        
+    
+        var popup_6b1700d2fb4105e0649bd30d8dc10e89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcc1831e35b938006eabc8d229ce9347 = $(`<div id="html_bcc1831e35b938006eabc8d229ce9347" style="width: 100.0%; height: 100.0%;">Diretório Estadual do Partido Novo Ceará</div>`)[0];
+                popup_6b1700d2fb4105e0649bd30d8dc10e89.setContent(html_bcc1831e35b938006eabc8d229ce9347);
+            
+        
+
+        marker_c7635d4263cac8cae5984ef45f154ccf.bindPopup(popup_6b1700d2fb4105e0649bd30d8dc10e89)
+        ;
+
+        
+    
+    
+            var marker_33c756703e49066083faaca8675bcbc0 = L.marker(
+                [-3.7262796, -38.5003948],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_f35a2b6c5c7f3c25a10ea9bb0c0d80d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33c756703e49066083faaca8675bcbc0.setIcon(icon_f35a2b6c5c7f3c25a10ea9bb0c0d80d5);
+        
+    
+        var popup_21cede801fceadefde223dde0b480d59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94d37a3ba3ebb07e6394cbaedb7df0b6 = $(`<div id="html_94d37a3ba3ebb07e6394cbaedb7df0b6" style="width: 100.0%; height: 100.0%;">Partido Democrático Trabalhista | PDT Ceará</div>`)[0];
+                popup_21cede801fceadefde223dde0b480d59.setContent(html_94d37a3ba3ebb07e6394cbaedb7df0b6);
+            
+        
+
+        marker_33c756703e49066083faaca8675bcbc0.bindPopup(popup_21cede801fceadefde223dde0b480d59)
+        ;
+
+        
+    
+    
+            var marker_dfc768d6a91d79e32036f83dccc55c97 = L.marker(
+                [-3.7259989, -38.4934804],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_ed124497e6446722310836a3f30bf58a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dfc768d6a91d79e32036f83dccc55c97.setIcon(icon_ed124497e6446722310836a3f30bf58a);
+        
+    
+        var popup_5beb75e0efef55b2b44cb5ceece96094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7d2f02962546130412c709cbd320c61 = $(`<div id="html_e7d2f02962546130412c709cbd320c61" style="width: 100.0%; height: 100.0%;">Colégio Master</div>`)[0];
+                popup_5beb75e0efef55b2b44cb5ceece96094.setContent(html_e7d2f02962546130412c709cbd320c61);
+            
+        
+
+        marker_dfc768d6a91d79e32036f83dccc55c97.bindPopup(popup_5beb75e0efef55b2b44cb5ceece96094)
+        ;
+
+        
+    
+    
+            var marker_7efe5d1e5fc1db869ed7a817be0c7b9e = L.marker(
+                [-3.72834585, -38.491197893261294],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_31fdf9f1e892d10e1ead682c932c66d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7efe5d1e5fc1db869ed7a817be0c7b9e.setIcon(icon_31fdf9f1e892d10e1ead682c932c66d7);
+        
+    
+        var popup_042ea32e52fb2d1af56e6fa7dbd36894 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c25564251242ae1e303d6f9732d1ace3 = $(`<div id="html_c25564251242ae1e303d6f9732d1ace3" style="width: 100.0%; height: 100.0%;">MDB</div>`)[0];
+                popup_042ea32e52fb2d1af56e6fa7dbd36894.setContent(html_c25564251242ae1e303d6f9732d1ace3);
+            
+        
+
+        marker_7efe5d1e5fc1db869ed7a817be0c7b9e.bindPopup(popup_042ea32e52fb2d1af56e6fa7dbd36894)
+        ;
+
+        
+    
+    
+            var marker_b77e7de01ec439a701c06b465c440fb0 = L.marker(
+                [-3.7237569, -38.4874985],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_3bb4b6701dc28f66b236183f269cabbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b77e7de01ec439a701c06b465c440fb0.setIcon(icon_3bb4b6701dc28f66b236183f269cabbe);
+        
+    
+        var popup_d02ebc7815ec27b3f13a02f0f03f3d0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_197e073cbcbd5d8b8289757122ae9581 = $(`<div id="html_197e073cbcbd5d8b8289757122ae9581" style="width: 100.0%; height: 100.0%;">Coco Bambu</div>`)[0];
+                popup_d02ebc7815ec27b3f13a02f0f03f3d0b.setContent(html_197e073cbcbd5d8b8289757122ae9581);
+            
+        
+
+        marker_b77e7de01ec439a701c06b465c440fb0.bindPopup(popup_d02ebc7815ec27b3f13a02f0f03f3d0b)
+        ;
+
+        
+    
+    
+            var marker_4ba7c64c431555b331e67ed68cf7bb4f = L.marker(
+                [-3.7315354, -38.487188],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_c2684f240509f6f713955f246c0d208e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ba7c64c431555b331e67ed68cf7bb4f.setIcon(icon_c2684f240509f6f713955f246c0d208e);
+        
+    
+        var popup_36d64c2f6ebaf5f8145d1fbb720d8f14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29ee340804e8c23054cbd519c66212ed = $(`<div id="html_29ee340804e8c23054cbd519c66212ed" style="width: 100.0%; height: 100.0%;">Colégio Farias Brito Central</div>`)[0];
+                popup_36d64c2f6ebaf5f8145d1fbb720d8f14.setContent(html_29ee340804e8c23054cbd519c66212ed);
+            
+        
+
+        marker_4ba7c64c431555b331e67ed68cf7bb4f.bindPopup(popup_36d64c2f6ebaf5f8145d1fbb720d8f14)
+        ;
+
+        
+    
+    
+            var marker_7527b388c9cc04c614132b9b276e4e1b = L.marker(
+                [-3.7315851, -38.4892367],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_4ad8434352c9084d08cc84b94d9137d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7527b388c9cc04c614132b9b276e4e1b.setIcon(icon_4ad8434352c9084d08cc84b94d9137d0);
+        
+    
+        var popup_51eab97773c11bfe15e7346fdf480d34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7ae45ea389c5f0c758228cdb90d3785 = $(`<div id="html_d7ae45ea389c5f0c758228cdb90d3785" style="width: 100.0%; height: 100.0%;">Misaki</div>`)[0];
+                popup_51eab97773c11bfe15e7346fdf480d34.setContent(html_d7ae45ea389c5f0c758228cdb90d3785);
+            
+        
+
+        marker_7527b388c9cc04c614132b9b276e4e1b.bindPopup(popup_51eab97773c11bfe15e7346fdf480d34)
+        ;
+
+        
+    
+    
+            var marker_752167502d35c8eba6c99b17c5af6782 = L.marker(
+                [-3.7326931, -38.4894899],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_87595544b02095f9326187946f7e23e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_752167502d35c8eba6c99b17c5af6782.setIcon(icon_87595544b02095f9326187946f7e23e0);
+        
+    
+        var popup_20824bd35af5cdfd0447d050978bd497 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79e32136ea0f8eed11e7b94a4d4d2e0d = $(`<div id="html_79e32136ea0f8eed11e7b94a4d4d2e0d" style="width: 100.0%; height: 100.0%;">Cervejaria Turatti</div>`)[0];
+                popup_20824bd35af5cdfd0447d050978bd497.setContent(html_79e32136ea0f8eed11e7b94a4d4d2e0d);
+            
+        
+
+        marker_752167502d35c8eba6c99b17c5af6782.bindPopup(popup_20824bd35af5cdfd0447d050978bd497)
+        ;
+
+        
+    
+    
+            var marker_097b3a94c7f46e879ccb85764b63295b = L.marker(
+                [-3.7357977, -38.4904025717601],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_bd44e96bb6f12725c169936a0f68fa69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_097b3a94c7f46e879ccb85764b63295b.setIcon(icon_bd44e96bb6f12725c169936a0f68fa69);
+        
+    
+        var popup_62d3a47676102950dfed98a7491f4712 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19d9a02e1e7807e9d6e778993c617b77 = $(`<div id="html_19d9a02e1e7807e9d6e778993c617b77" style="width: 100.0%; height: 100.0%;">Avante</div>`)[0];
+                popup_62d3a47676102950dfed98a7491f4712.setContent(html_19d9a02e1e7807e9d6e778993c617b77);
+            
+        
+
+        marker_097b3a94c7f46e879ccb85764b63295b.bindPopup(popup_62d3a47676102950dfed98a7491f4712)
+        ;
+
+        
+    
+    
+            var marker_de978c2bfc467e81f36b4fc794e446f2 = L.marker(
+                [-3.7351584, -38.4915725],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_cff58fedac37d73a4361cbe7223f2bf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de978c2bfc467e81f36b4fc794e446f2.setIcon(icon_cff58fedac37d73a4361cbe7223f2bf8);
+        
+    
+        var popup_ca46d6df01000a841e21a623d014cdab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f523a861fc64a91b67bb687d9d5de28f = $(`<div id="html_f523a861fc64a91b67bb687d9d5de28f" style="width: 100.0%; height: 100.0%;">Mangue Azul</div>`)[0];
+                popup_ca46d6df01000a841e21a623d014cdab.setContent(html_f523a861fc64a91b67bb687d9d5de28f);
+            
+        
+
+        marker_de978c2bfc467e81f36b4fc794e446f2.bindPopup(popup_ca46d6df01000a841e21a623d014cdab)
+        ;
+
+        
+    
+    
+            var marker_f3dc31e1a9d9dc1954d89b9468533457 = L.marker(
+                [-3.73171205, -38.572471207354525],
+                {}
+            ).addTo(marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74);
+        
+    
+            var icon_49909278c1c7cc2ee81c2469c2ff7e34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3dc31e1a9d9dc1954d89b9468533457.setIcon(icon_49909278c1c7cc2ee81c2469c2ff7e34);
+        
+    
+        var popup_8d76c62f9ff2ad22c8b00b41220b85c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57b71cdca43621cd624d556d40515091 = $(`<div id="html_57b71cdca43621cd624d556d40515091" style="width: 100.0%; height: 100.0%;">Servprint</div>`)[0];
+                popup_8d76c62f9ff2ad22c8b00b41220b85c4.setContent(html_57b71cdca43621cd624d556d40515091);
+            
+        
+
+        marker_f3dc31e1a9d9dc1954d89b9468533457.bindPopup(popup_8d76c62f9ff2ad22c8b00b41220b85c4)
+        ;
+
+        
+    
+    
+            marker_cluster_bd456cd7b3d4be4c2a86a6ab638c4f74.addTo(map_231b460c6da0d95872f9733d05741dfe);
+        
+    
+            var poly_line_ddb55b8765e3de91fd5a9dfea5ab1dad = L.polyline(
+                [[-3.7314226, -38.572756], [-3.7324982, -38.5726346], [-3.7335867, -38.5724969], [-3.7336958, -38.5733973], [-3.7338057, -38.5742967], [-3.7338846, -38.5748971], [-3.7343637, -38.5751277], [-3.734602, -38.5753255], [-3.735071, -38.5755672], [-3.7352749, -38.5756562], [-3.7356611, -38.5758691], [-3.7360259, -38.5760693], [-3.7362735, -38.576204], [-3.7367506, -38.5764431], [-3.7372162, -38.5766514], [-3.737358, -38.5766309], [-3.7374653, -38.5774306], [-3.7374929, -38.5776344], [-3.7376239, -38.5786177], [-3.737741, -38.5793955], [-3.7377699, -38.5796035], [-3.7381132, -38.5820057], [-3.7382062, -38.5826044], [-3.7383116, -38.5833736], [-3.7386157, -38.5854716], [-3.7387291, -38.586169], [-3.7387542, -38.5863283], [-3.7387704, -38.5864755], [-3.7388068, -38.5867468], [-3.7389091, -38.5875321], [-3.7390214, -38.5875801], [-3.7392155, -38.5888976], [-3.7396112, -38.5915792], [-3.739958, -38.5939306], [-3.7400629, -38.5946412], [-3.7402403, -38.5958326], [-3.7409492, -38.6006753], [-3.7411235, -38.6019788], [-3.7412565, -38.602863], [-3.7414023, -38.6038632], [-3.7421732, -38.6091322], [-3.7425998, -38.6120343], [-3.7426274, -38.6122145], [-3.7426937, -38.6126669], [-3.7429261, -38.6141496], [-3.74303, -38.6149916], [-3.7434006, -38.6172292], [-3.7433047, -38.618902], [-3.7432453, -38.6201263], [-3.7432278, -38.6206063], [-3.743162, -38.6211654], [-3.7429894, -38.6219924], [-3.742668, -38.6234602], [-3.7423363, -38.6249712], [-3.7411418, -38.6305369], [-3.7409406, -38.6314194], [-3.7396326, -38.6371158], [-3.7372076, -38.6454933], [-3.737093, -38.6455679], [-3.7370278, -38.6459216], [-3.7371085, -38.6460325], [-3.7366963, -38.64962], [-3.7359455, -38.652144], [-3.735797, -38.6525764], [-3.7349353, -38.6542142], [-3.7345695, -38.6542005], [-3.7345494, -38.6547722], [-3.7345264, -38.655532], [-3.7345041, -38.6562933], [-3.7344785, -38.6570415], [-3.7344479, -38.6578553], [-3.7344116, -38.6588231], [-3.7354081, -38.6588223], [-3.7354081, -38.6588223], [-3.7354025, -38.6578586], [-3.7353965, -38.6570569], [-3.7353915, -38.6562935], [-3.7353843, -38.6554485], [-3.7353779, -38.6542286], [-3.7358947, -38.6526664], [-3.7361195, -38.6519824], [-3.736339, -38.6512998], [-3.7365464, -38.65064], [-3.7367204, -38.6499614], [-3.7368797, -38.6492962], [-3.7370443, -38.6485854], [-3.7374993, -38.6465549], [-3.7376408, -38.6458882], [-3.7376516, -38.6458451], [-3.7376627, -38.6457965], [-3.7378298, -38.645187], [-3.7380038, -38.6444977], [-3.7381764, -38.643807], [-3.7383466, -38.6431301], [-3.7385141, -38.6424524], [-3.7386743, -38.6417753], [-3.7388361, -38.6410796], [-3.7389553, -38.6404797], [-3.739129, -38.6397386], [-3.7392886, -38.6390807], [-3.7394552, -38.6383668], [-3.739609, -38.6376829], [-3.7397523, -38.637072], [-3.7398395, -38.6366867], [-3.7403988, -38.6342326], [-3.7410185, -38.631565], [-3.7412406, -38.6306035], [-3.7419499, -38.6274416], [-3.742117, -38.6267046], [-3.7424818, -38.6249586], [-3.7427915, -38.6234895], [-3.7430891, -38.6220127], [-3.7435396, -38.6207686], [-3.7437148, -38.6205731], [-3.7437713, -38.6205061], [-3.743987, -38.6190872], [-3.7439736, -38.6190592], [-3.7438765, -38.6188247], [-3.7435927, -38.617288], [-3.7432328, -38.6149946], [-3.7431842, -38.6143453], [-3.7431731, -38.6141013], [-3.7429951, -38.6129327], [-3.7426042, -38.6102935], [-3.7425872, -38.6101896], [-3.7424599, -38.6093081], [-3.7423682, -38.6087023], [-3.7423274, -38.6084097], [-3.742201, -38.6075406], [-3.7420736, -38.6066563], [-3.7418643, -38.6052408], [-3.7416673, -38.6040218], [-3.7415578, -38.6032514], [-3.7414974, -38.6028273], [-3.7420243, -38.6027154], [-3.7423704, -38.6026643], [-3.7427531, -38.6026079], [-3.743041, -38.6025654], [-3.7431132, -38.6025325], [-3.7434665, -38.6024943], [-3.7445666, -38.6023562], [-3.7449988, -38.6022931], [-3.7451393, -38.6022797], [-3.7453849, -38.6022516], [-3.7457187, -38.602215], [-3.7459476, -38.6021846], [-3.7464548, -38.6021188], [-3.7464385, -38.6018186], [-3.7479122, -38.601294], [-3.7480353, -38.6012685], [-3.7480915, -38.6010928], [-3.7481614, -38.6009658], [-3.7483058, -38.6001703], [-3.7483218, -38.6001112], [-3.7484306, -38.5996882], [-3.7491081, -38.5988131], [-3.7503017, -38.5990084], [-3.751452, -38.5987841], [-3.7526983, -38.5987325], [-3.7537291, -38.5988205], [-3.7542016, -38.5986776], [-3.754326, -38.5986363], [-3.7550592, -38.598637], [-3.7550854, -38.5985141], [-3.7551721, -38.5982488], [-3.757626, -38.5978718], [-3.7585254, -38.5971354], [-3.7591778, -38.5966467], [-3.7595147, -38.5962554], [-3.759767, -38.5960304], [-3.7602644, -38.5958368], [-3.7612569, -38.5950237], [-3.7618381, -38.5947451], [-3.7619408, -38.5946989], [-3.7623849, -38.5945646], [-3.7629864, -38.5944107], [-3.7633034, -38.5943488], [-3.7640971, -38.5942023], [-3.7646118, -38.5942091], [-3.7660628, -38.593903], [-3.7665884, -38.5930295], [-3.7666187, -38.5929729], [-3.7670167, -38.592244], [-3.7674105, -38.591495], [-3.7678501, -38.5916395], [-3.7691997, -38.5909603], [-3.769921, -38.5906268], [-3.7700306, -38.5905666], [-3.7703006, -38.5904405], [-3.7710047, -38.5901071], [-3.7710741, -38.5900727], [-3.7723862, -38.5894246], [-3.7735445, -38.5888319], [-3.7740632, -38.5885897], [-3.7746256, -38.588324], [-3.7752156, -38.588006], [-3.7755004, -38.5879021], [-3.7755028, -38.5872047], [-3.775857, -38.5864019], [-3.7761269, -38.5858367], [-3.7763263, -38.5854066], [-3.7763638, -38.5853093], [-3.7765673, -38.5848588], [-3.776635, -38.5847176], [-3.7768024, -38.5844316], [-3.7768211, -38.5844025], [-3.7770716, -38.5839586], [-3.7776158, -38.583039], [-3.7780636, -38.5823225], [-3.778873, -38.5817507], [-3.7794871, -38.5819179], [-3.7809725, -38.5823051], [-3.7815347, -38.5803518], [-3.781905, -38.5806716], [-3.7824094, -38.5799828], [-3.7827583, -38.5795418], [-3.7830841, -38.5790872], [-3.7833308, -38.5787893], [-3.7834187, -38.5786999], [-3.7831453, -38.5782063], [-3.7839446, -38.5771879], [-3.7846085, -38.5763075], [-3.7852904, -38.5754035], [-3.7845815, -38.5748986], [-3.7842357, -38.574644], [-3.7840564, -38.574478], [-3.7856264, -38.5712879], [-3.7859254, -38.5704608], [-3.7862249, -38.5696409], [-3.7865437, -38.5687373], [-3.7868634, -38.5678822], [-3.7872277, -38.5668837], [-3.7878199, -38.5668584], [-3.7919103, -38.5676857], [-3.7925363, -38.5681902], [-3.7928799, -38.5684725], [-3.7930803, -38.5700209], [-3.7937696, -38.5700646], [-3.7937696, -38.5700646], [-3.7947335, -38.5703429], [-3.7957066, -38.5706276], [-3.7959623, -38.5698369], [-3.795999, -38.5697001], [-3.796165, -38.5691774], [-3.7962469, -38.5689022], [-3.796499, -38.5680492], [-3.796655, -38.5675165], [-3.7970306, -38.566301], [-3.7970813, -38.5661786], [-3.7973237, -38.5653736], [-3.7975685, -38.5645358], [-3.7976039, -38.5644089], [-3.7978212, -38.5636935], [-3.7981267, -38.5626938], [-3.7982643, -38.5622103], [-3.7991086, -38.5619509], [-3.7997892, -38.5617629], [-3.8006034, -38.5611391], [-3.8013368, -38.5605666], [-3.8020776, -38.560256], [-3.8031236, -38.5598688], [-3.8037095, -38.5594994], [-3.804501, -38.5589999], [-3.8049962, -38.5587], [-3.8061273, -38.5580042], [-3.8064182, -38.5578203], [-3.8065536, -38.5577285], [-3.8069469, -38.5573374], [-3.8066432, -38.557064], [-3.8065231, -38.5571902], [-3.8062856, -38.5569724], [-3.8061264, -38.5568099], [-3.8063165, -38.5565552], [-3.8065069, -38.5562769], [-3.8067663, -38.5558238], [-3.8078842, -38.5542728], [-3.8079565, -38.5542924], [-3.8079951, -38.5541729], [-3.8066455, -38.5537705], [-3.8069607, -38.5532195], [-3.8077518, -38.5517771], [-3.8089514, -38.5495799], [-3.809062, -38.549379], [-3.8099403, -38.5477984], [-3.8099804, -38.5477262], [-3.8102623, -38.5472227], [-3.810288, -38.5468471], [-3.8100693, -38.5464198], [-3.8098937, -38.546038], [-3.80973, -38.5456944], [-3.809489, -38.5451615], [-3.8095584, -38.5451377], [-3.8097091, -38.5436352], [-3.8094012, -38.5435811], [-3.8092594, -38.5435704], [-3.8094164, -38.5429095], [-3.8096304, -38.5419845], [-3.8096461, -38.5415697], [-3.8094647, -38.5415759], [-3.8099431, -38.5409126], [-3.8105113, -38.5400885], [-3.8111477, -38.5391523], [-3.8118511, -38.5381675], [-3.8122674, -38.5375636], [-3.8131098, -38.5363905], [-3.813169, -38.5363066], [-3.8135931, -38.5357089], [-3.8136387, -38.5356356], [-3.8144944, -38.5344138], [-3.8144728, -38.5343825], [-3.8143832, -38.5342415], [-3.8133759, -38.531274], [-3.8133033, -38.5311235], [-3.8130663, -38.5306942], [-3.8127926, -38.5302368], [-3.8121228, -38.5296623], [-3.8117854, -38.5293793], [-3.8117115, -38.5293174], [-3.8121708, -38.5287013], [-3.8122672, -38.5285795], [-3.8114659, -38.5279929], [-3.8097636, -38.5267824], [-3.8096052, -38.5266741], [-3.8092359, -38.5263792], [-3.8095651, -38.5257541], [-3.8087853, -38.5251542], [-3.8091978, -38.524607], [-3.8096029, -38.5240266], [-3.808947, -38.5235422], [-3.809184, -38.5231966], [-3.8094248, -38.5224836], [-3.8094655, -38.5223475], [-3.8096943, -38.5214353], [-3.8099054, -38.5205369], [-3.8101342, -38.5196656], [-3.8101495, -38.519598], [-3.8103455, -38.5187687], [-3.810582, -38.517821], [-3.8108002, -38.5169926], [-3.811456, -38.514332], [-3.8117281, -38.5132508], [-3.8117558, -38.513123], [-3.8118454, -38.5119403], [-3.8117584, -38.5113327], [-3.8110717, -38.5099487], [-3.8106819, -38.5095182], [-3.809355, -38.5087448], [-3.8078895, -38.5084563], [-3.8061434, -38.5081899], [-3.8053308, -38.5080725], [-3.8043809, -38.5079263], [-3.8039414, -38.5078604], [-3.8031759, -38.5077388], [-3.8023713, -38.5076145], [-3.8017233, -38.5075192], [-3.8011983, -38.5073913], [-3.8010908, -38.507345], [-3.8004709, -38.5068484], [-3.8003271, -38.5066924], [-3.7999195, -38.5059162], [-3.7993315, -38.5046259], [-3.7989639, -38.5038212], [-3.7987892, -38.5034447], [-3.7983915, -38.5025831], [-3.7977739, -38.5012237], [-3.7972204, -38.5000088], [-3.7971691, -38.4998926], [-3.7965057, -38.498436], [-3.7958812, -38.4970705], [-3.7954363, -38.4951975], [-3.7955314, -38.4942035], [-3.7956563, -38.4931732], [-3.7957751, -38.4921578], [-3.7958897, -38.4911465], [-3.7960072, -38.4901372], [-3.7960648, -38.4896417], [-3.7961285, -38.4891153], [-3.7962397, -38.488106], [-3.7963534, -38.486808], [-3.7962619, -38.4867999], [-3.7948192, -38.4866506], [-3.7944096, -38.486607], [-3.7924804, -38.4864065], [-3.7924741, -38.4862829], [-3.7921572, -38.4863604], [-3.7916239, -38.4863933], [-3.7912522, -38.4863298], [-3.7911769, -38.4855843], [-3.7905531, -38.4856252], [-3.7899243, -38.485673], [-3.789854, -38.4848435], [-3.7897687, -38.4838375], [-3.7896989, -38.4830147], [-3.7896319, -38.4821845], [-3.7895548, -38.4813528], [-3.789492, -38.4805843], [-3.7894811, -38.4804558], [-3.7894108, -38.4796275], [-3.7894108, -38.4796275], [-3.7893421, -38.4787928], [-3.7892756, -38.478799], [-3.7894036, -38.4804627], [-3.7869244, -38.4806779], [-3.786099, -38.480736], [-3.7844521, -38.4808547], [-3.7837035, -38.4809183], [-3.7817955, -38.4810797], [-3.7814583, -38.4811063], [-3.7793597, -38.4812545], [-3.7744443, -38.481648], [-3.7731618, -38.4816915], [-3.7726003, -38.4817418], [-3.7714897, -38.481828], [-3.7714003, -38.4818347], [-3.7644934, -38.4825477], [-3.7632397, -38.4826558], [-3.7626735, -38.4827014], [-3.7610054, -38.4828568], [-3.7609371, -38.4828624], [-3.7596218, -38.482956], [-3.7595484, -38.4829606], [-3.7592622, -38.4829889], [-3.758032, -38.4831215], [-3.7579092, -38.4831359], [-3.7575622, -38.483161], [-3.7570784, -38.4831992], [-3.7567846, -38.4832426], [-3.7555913, -38.4833272], [-3.7509941, -38.4818683], [-3.7504133, -38.4816601], [-3.7479621, -38.4804236], [-3.7472421, -38.4799705], [-3.7467056, -38.4795869], [-3.7467735, -38.4792464], [-3.747043, -38.4784041], [-3.7472, -38.476971], [-3.7471997, -38.4764369], [-3.7472092, -38.4758342], [-3.7472255, -38.4752221], [-3.7472298, -38.4751099], [-3.747412, -38.4746116], [-3.7474898, -38.4743706], [-3.7466903, -38.4740929], [-3.745909, -38.4738445], [-3.7465124, -38.472029], [-3.7470911, -38.4701841], [-3.7463133, -38.4699478], [-3.7455362, -38.4696905], [-3.7458419, -38.4687768], [-3.7458901, -38.4686239], [-3.7461283, -38.4678816], [-3.7464975, -38.4667161], [-3.7468428, -38.4656418], [-3.7471591, -38.4646606], [-3.7474616, -38.4637203], [-3.7476136, -38.4632487], [-3.7476516, -38.4631306], [-3.7477883, -38.4627052], [-3.748105, -38.4617521], [-3.7490377, -38.4588321], [-3.749204, -38.4583065], [-3.7496646, -38.4568761], [-3.7497359, -38.4565572], [-3.7490912, -38.4543359], [-3.7488833, -38.4539219], [-3.7488158, -38.4537921], [-3.7487904, -38.4537396], [-3.7485623, -38.4532491], [-3.7481485, -38.4524173], [-3.7479495, -38.4520005], [-3.7478821, -38.4518677], [-3.7477188, -38.451546], [-3.747243, -38.4505708], [-3.7473814, -38.45022], [-3.7481411, -38.4498147], [-3.7490713, -38.4493134], [-3.7490375, -38.4492552], [-3.7485905, -38.4482964], [-3.7495296, -38.4478476], [-3.7496006, -38.4478109], [-3.750552, -38.4473387], [-3.7515921, -38.4468443], [-3.7525649, -38.4463662], [-3.7535415, -38.4458888], [-3.7545106, -38.4454159], [-3.7544801, -38.4453537], [-3.7544801, -38.4453537], [-3.7535083, -38.445821], [-3.7525336, -38.4463005], [-3.7515594, -38.4467739], [-3.7505257, -38.447285], [-3.7495717, -38.4477494], [-3.7494994, -38.4477834], [-3.7485631, -38.4482378], [-3.7485905, -38.4482964], [-3.7490375, -38.4492552], [-3.7481125, -38.4497607], [-3.7471066, -38.4503037], [-3.7469503, -38.450383], [-3.7469748, -38.4504329], [-3.7470651, -38.4506297], [-3.7476962, -38.4519572], [-3.7477587, -38.4520888], [-3.7479573, -38.452503], [-3.7484259, -38.4534565], [-3.7486327, -38.4538813], [-3.7486954, -38.4540075], [-3.7489114, -38.4544492], [-3.7494347, -38.4555241], [-3.7496026, -38.4566296], [-3.7495518, -38.4568533], [-3.7492733, -38.4577142], [-3.7491899, -38.4579859], [-3.7491008, -38.4582685], [-3.7489345, -38.4588005], [-3.7487004, -38.4595495], [-3.7480342, -38.4616205], [-3.7480034, -38.4617173], [-3.7476965, -38.4626709], [-3.747559, -38.4630979], [-3.7475207, -38.4632184], [-3.7473681, -38.4636894], [-3.7473246, -38.4638218], [-3.7470675, -38.4646316], [-3.7464044, -38.4666856], [-3.7460166, -38.4678484], [-3.7460166, -38.4678484], [-3.7457892, -38.4685887], [-3.7457429, -38.4687392], [-3.7454412, -38.4696599], [-3.7451577, -38.4705366], [-3.7448324, -38.4714862], [-3.7440767, -38.4712426], [-3.7432995, -38.4709928], [-3.7425101, -38.4707528], [-3.7419531, -38.4725089], [-3.7419375, -38.4725566], [-3.741543, -38.4737715], [-3.7413622, -38.4743992], [-3.7410448, -38.4753871], [-3.7406915, -38.4764708], [-3.7400878, -38.4783119], [-3.7395124, -38.4801234], [-3.7380685, -38.4814172], [-3.7370079, -38.4828833], [-3.736941, -38.4829948], [-3.7362994, -38.484834], [-3.7361784, -38.4851288], [-3.7358057, -38.4857129], [-3.7358132, -38.4859259], [-3.7358675, -38.4862284], [-3.7359002, -38.4870031], [-3.7370038, -38.4869847], [-3.7381199, -38.4869567], [-3.7381596, -38.487996], [-3.7381805, -38.4885083], [-3.7381576, -38.4890383], [-3.7392719, -38.4889957], [-3.7392922, -38.4889307], [-3.7394465, -38.4886721], [-3.7396357, -38.4881497], [-3.7396357, -38.4881497], [-3.7401216, -38.4882971], [-3.7405609, -38.4884524], [-3.7403909, -38.488953], [-3.7400744, -38.4899293], [-3.7397568, -38.4908968], [-3.7397568, -38.4908968], [-3.7394555, -38.491861], [-3.740422, -38.492185], [-3.7413812, -38.4924863], [-3.7410839, -38.4934356], [-3.7420519, -38.4937659], [-3.7417445, -38.4947002], [-3.7417237, -38.4947678], [-3.74142, -38.4956989], [-3.7411024, -38.4966863], [-3.7407833, -38.4976514], [-3.7404775, -38.4986123], [-3.7405435, -38.4986338], [-3.7405435, -38.4986338], [-3.740855, -38.4976751], [-3.7407833, -38.4976514], [-3.7404775, -38.4986123], [-3.7401662, -38.499578], [-3.7401446, -38.499644], [-3.7395161, -38.5015754], [-3.739201, -38.5025503], [-3.7388944, -38.503519], [-3.7389689, -38.5035402], [-3.7389547, -38.5035843], [-3.7386553, -38.504506], [-3.7383278, -38.5054881], [-3.73798, -38.5065468], [-3.7376494, -38.5075336], [-3.7376301, -38.5075965], [-3.7374637, -38.5081052], [-3.7372959, -38.5086212], [-3.7364371, -38.5083664], [-3.7353002, -38.5080103], [-3.734356, -38.5077061], [-3.7342251, -38.5081038], [-3.7340014, -38.5087823], [-3.733833, -38.509312], [-3.7336555, -38.5098395], [-3.7346018, -38.5101524], [-3.7346018, -38.5101524], [-3.7347741, -38.5096232], [-3.733833, -38.509312], [-3.7336555, -38.5098395], [-3.7333132, -38.5108894], [-3.7322586, -38.5105566], [-3.7308305, -38.5100938], [-3.7303372, -38.5099405], [-3.729418, -38.5096315], [-3.7279944, -38.5091794], [-3.7266067, -38.5087277], [-3.7257284, -38.5084472], [-3.7248911, -38.5081557], [-3.7242922, -38.5079716], [-3.7237186, -38.507786], [-3.7226098, -38.5074319], [-3.7223572, -38.5079689], [-3.7221141, -38.5084844], [-3.7216183, -38.5095251], [-3.7211535, -38.5105007], [-3.720952, -38.5110644], [-3.7208459, -38.5116126], [-3.7208459, -38.5116126], [-3.7207229, -38.512204], [-3.720604, -38.5127755], [-3.7204417, -38.5135559], [-3.720416, -38.5139858], [-3.7203813, -38.5146222], [-3.7203617, -38.5149923], [-3.7202577, -38.5153234], [-3.7202118, -38.5154533], [-3.7202966, -38.5160961], [-3.7203823, -38.5167522], [-3.7204634, -38.5173448], [-3.7205327, -38.5178538], [-3.7207245, -38.519341], [-3.7207849, -38.5198162], [-3.7207931, -38.5198755], [-3.72094, -38.5209885], [-3.7210734, -38.5220024], [-3.7212099, -38.5230513], [-3.7212233, -38.5232154], [-3.7220663, -38.5236999], [-3.7225796, -38.5239896], [-3.7237164, -38.5246405], [-3.7235615, -38.5250021], [-3.7244576, -38.5255289], [-3.7254357, -38.5259977], [-3.7252952, -38.526448], [-3.7251189, -38.5270267], [-3.7248863, -38.5277573], [-3.7245272, -38.5289124], [-3.7254966, -38.5291998], [-3.729109, -38.530284], [-3.7305431, -38.5307122], [-3.7313941, -38.5309784], [-3.7314743, -38.5310015], [-3.73236, -38.5312711], [-3.7333701, -38.5315784], [-3.7343955, -38.5319021], [-3.7344644, -38.5319245], [-3.7351833, -38.5321465], [-3.7361992, -38.5324205], [-3.7363103, -38.5324561], [-3.7372277, -38.5327518], [-3.7377365, -38.5329048], [-3.7382779, -38.5330645], [-3.7381801, -38.5333584], [-3.7379755, -38.5339935], [-3.7378953, -38.5342662], [-3.7377886, -38.5345903], [-3.7375606, -38.5350794], [-3.7370813, -38.5355985], [-3.7370813, -38.5355985], [-3.7364518, -38.5350098], [-3.7356958, -38.5358618], [-3.7352636, -38.535657], [-3.7351528, -38.5356251], [-3.7348211, -38.5366686], [-3.7347955, -38.5367516], [-3.734456, -38.5377978], [-3.7340923, -38.5388903], [-3.7336049, -38.5399053], [-3.7332616, -38.5409765], [-3.7330571, -38.5416378], [-3.7329821, -38.5418719], [-3.7329666, -38.5423215], [-3.733011, -38.5424382], [-3.7331963, -38.5434559], [-3.7333271, -38.5441613], [-3.7333455, -38.5442285], [-3.7335102, -38.5443775], [-3.7335963, -38.5444555], [-3.7336643, -38.544517], [-3.7338198, -38.5452035], [-3.7339378, -38.5457078], [-3.7342402, -38.5470766], [-3.7344623, -38.547026], [-3.7345826, -38.5475867], [-3.7346409, -38.5478883], [-3.7347543, -38.5484426], [-3.734807, -38.5487121], [-3.7349687, -38.5495255], [-3.7349687, -38.5495255], [-3.7350466, -38.5498943], [-3.7351124, -38.5502131], [-3.7351911, -38.5505973], [-3.7354083, -38.5516959], [-3.7356401, -38.5527553], [-3.735873, -38.5538453], [-3.7360762, -38.5549133], [-3.7361925, -38.5554642], [-3.7363216, -38.556076], [-3.7365298, -38.5570993], [-3.7366565, -38.5577637], [-3.7367445, -38.5581807], [-3.7368082, -38.5584933], [-3.7369626, -38.55927], [-3.7372001, -38.5603517], [-3.7374197, -38.5614408], [-3.7376625, -38.5625109], [-3.737882, -38.5635795], [-3.7384273, -38.5634917], [-3.7382046, -38.5624145], [-3.7382046, -38.5624145], [-3.7384273, -38.5634917], [-3.7389712, -38.5633826], [-3.7395035, -38.5632709], [-3.7400525, -38.5631596], [-3.740616, -38.5630366], [-3.7411481, -38.5629302], [-3.7412118, -38.5629164], [-3.7419136, -38.5627669], [-3.7426233, -38.5626198], [-3.743304, -38.5624793], [-3.7430753, -38.5614057], [-3.7428499, -38.5603287], [-3.7432041, -38.5602567], [-3.7434018, -38.5594513], [-3.7433261, -38.5590926], [-3.7440266, -38.5589453], [-3.7447267, -38.5588018], [-3.7454224, -38.5586616], [-3.7461139, -38.5585133], [-3.7468173, -38.5583748], [-3.7465998, -38.5572965], [-3.7467135, -38.5572665], [-3.7471393, -38.556875], [-3.7478199, -38.5561211], [-3.7484849, -38.5553875], [-3.7491686, -38.5546623], [-3.7498304, -38.5539295], [-3.7504948, -38.5531973], [-3.7509236, -38.5527185], [-3.7511519, -38.5524611], [-3.7504141, -38.5517856], [-3.7513759, -38.5506371], [-3.7513961, -38.550615], [-3.7516656, -38.5503018], [-3.7523929, -38.5494792], [-3.7545249, -38.5513872], [-3.7550056, -38.5518192], [-3.7550056, -38.5518192], [-3.7550335, -38.5517838], [-3.7545474, -38.551351], [-3.7542777, -38.5511109], [-3.7539088, -38.5507649], [-3.7532059, -38.5501442], [-3.752424, -38.549443], [-3.7521076, -38.5491605], [-3.7518614, -38.5489357], [-3.7525437, -38.5480786], [-3.751833, -38.5474444], [-3.7510366, -38.5467095], [-3.7502238, -38.5459851], [-3.7494146, -38.5452348], [-3.749763, -38.5448299], [-3.7489667, -38.5441159], [-3.7479274, -38.5431394], [-3.7476515, -38.5415097], [-3.7475394, -38.5412807], [-3.7476249, -38.5406397], [-3.7482305, -38.5401102], [-3.7491855, -38.5393073], [-3.7496497, -38.53869], [-3.7506779, -38.5368872], [-3.7507262, -38.5368176], [-3.7513747, -38.5350833], [-3.7522481, -38.5328538], [-3.752311, -38.5327896], [-3.7520619, -38.5327169], [-3.750375, -38.532204], [-3.7491611, -38.531581], [-3.7498045, -38.5308161], [-3.7503184, -38.5302205], [-3.7508023, -38.529665], [-3.7512462, -38.5291546], [-3.7514923, -38.528854], [-3.7517186, -38.5286016], [-3.7518981, -38.52838], [-3.7509115, -38.5275291], [-3.7513115, -38.5270783], [-3.7517716, -38.5265334], [-3.7523282, -38.5270126], [-3.7523282, -38.5270126], [-3.752752, -38.5273797], [-3.753294, -38.5267364], [-3.7538402, -38.5260938], [-3.7528623, -38.5252529], [-3.7533636, -38.5247095], [-3.7537381, -38.5218949], [-3.7535932, -38.5205673], [-3.7535837, -38.5204866], [-3.7534646, -38.5193262], [-3.7533261, -38.5182242], [-3.7531744, -38.5171282], [-3.753115, -38.5165464], [-3.7530547, -38.5160099], [-3.7529271, -38.5149413], [-3.7527919, -38.5138022], [-3.7526578, -38.5126612], [-3.7526195, -38.5123258], [-3.7525621, -38.5117996], [-3.7524981, -38.5112339], [-3.7523491, -38.5100251], [-3.7522152, -38.5088788], [-3.7520962, -38.507756], [-3.7520301, -38.5072335], [-3.7519653, -38.5066843], [-3.7518772, -38.5066104], [-3.7513216, -38.5064285], [-3.750448, -38.5061505], [-3.7497783, -38.5059391], [-3.7490924, -38.5057221], [-3.7484101, -38.5055012], [-3.7473475, -38.5051686], [-3.7465836, -38.5049199], [-3.7463948, -38.5048594], [-3.7457124, -38.5046415], [-3.7457124, -38.5046415], [-3.7453604, -38.5045346], [-3.7448473, -38.5043635], [-3.7451418, -38.503399], [-3.7454496, -38.5024153], [-3.7457426, -38.5014282], [-3.7457648, -38.5013588], [-3.7441152, -38.5008456], [-3.7441152, -38.5008456], [-3.7440933, -38.5009164], [-3.7450583, -38.5012225], [-3.7457426, -38.5014282], [-3.7457648, -38.5013588], [-3.7460688, -38.500406], [-3.7463694, -38.4994233], [-3.746679, -38.4984653], [-3.746988, -38.4974813], [-3.7472727, -38.4965447], [-3.7473005, -38.496462], [-3.7475922, -38.4955593], [-3.7478894, -38.4945855], [-3.7481968, -38.4936181], [-3.7483307, -38.493187], [-3.748496, -38.4925766], [-3.7486529, -38.4920877], [-3.7498691, -38.490286], [-3.7503352, -38.4903896], [-3.7509481, -38.4905323], [-3.7516255, -38.4906346], [-3.7560961, -38.4915152], [-3.757235, -38.4907102], [-3.7572883, -38.490529], [-3.7573994, -38.4900817], [-3.7575098, -38.4896508], [-3.7576222, -38.489214], [-3.7576222, -38.489214], [-3.7576222, -38.489214], [-3.757723, -38.4888158], [-3.7578352, -38.4883899], [-3.7578627, -38.4882812], [-3.7577479, -38.4882921], [-3.7544761, -38.4910539], [-3.7510665, -38.4903785], [-3.7487809, -38.489791], [-3.7473809, -38.4895502], [-3.7469756, -38.4894645], [-3.7466903, -38.489413], [-3.7449756, -38.4889215], [-3.7442491, -38.4881765], [-3.7435034, -38.4873521], [-3.7436922, -38.4870271], [-3.7437694, -38.4881546], [-3.7437329, -38.4882677], [-3.743538, -38.4886157], [-3.7433715, -38.489138], [-3.7435935, -38.4892918], [-3.7441128, -38.4882959], [-3.7447536, -38.4889444], [-3.7447536, -38.4889444], [-3.7444371, -38.4899708], [-3.7436539, -38.4894899], [-3.7433454, -38.489358], [-3.7432562, -38.4892157], [-3.7427964, -38.4889153], [-3.7432683, -38.4873881], [-3.743742, -38.4879584], [-3.7437694, -38.4881546], [-3.7437329, -38.4882677], [-3.7428472, -38.4912181], [-3.7426826, -38.4918334], [-3.7423639, -38.4927985], [-3.7420519, -38.4937659], [-3.7417445, -38.4947002], [-3.7407587, -38.4943812], [-3.7398078, -38.4940857], [-3.7388364, -38.4937728], [-3.7388164, -38.4938365], [-3.7385081, -38.4947673], [-3.7381983, -38.4957287], [-3.7378686, -38.4967074], [-3.7375624, -38.4976706], [-3.7372502, -38.4986441], [-3.7362314, -38.4983115], [-3.7362314, -38.4983115], [-3.7352496, -38.497997], [-3.7352273, -38.4980658], [-3.7349147, -38.4990305], [-3.7346005, -38.4999941], [-3.734289, -38.5009633], [-3.7333025, -38.5006515], [-3.7323095, -38.5003305], [-3.731304, -38.4999949], [-3.7303334, -38.4996783], [-3.7293516, -38.4993835], [-3.7283772, -38.4990737], [-3.7274166, -38.4987543], [-3.7264371, -38.4984515], [-3.7263475, -38.498425], [-3.7260389, -38.4993857], [-3.7257247, -38.5003688], [-3.7258153, -38.5004031], [-3.7258153, -38.5004031], [-3.726135, -38.4994199], [-3.7264371, -38.4984515], [-3.726754, -38.4974611], [-3.7270673, -38.4964972], [-3.7273725, -38.4955403], [-3.7272214, -38.4943552], [-3.7270528, -38.4932875], [-3.7269616, -38.4932996], [-3.7269616, -38.4932996], [-3.7272905, -38.4954705], [-3.7260752, -38.495075], [-3.7257248, -38.4924953], [-3.7268034, -38.4923183], [-3.7269091, -38.4923065], [-3.7272894, -38.492257], [-3.7276903, -38.4921692], [-3.7275613, -38.4911963], [-3.7284299, -38.4909221], [-3.7284958, -38.4912969], [-3.7284958, -38.4912969], [-3.7284299, -38.4909221], [-3.7288078, -38.4907745], [-3.7289181, -38.4907515], [-3.7289419, -38.4906756], [-3.7288325, -38.4906816], [-3.7284146, -38.4908472], [-3.7275486, -38.4911287], [-3.7267416, -38.4912864], [-3.7266476, -38.4913035], [-3.7255652, -38.4915243], [-3.7249916, -38.4906031], [-3.7245474, -38.4901631], [-3.7240772, -38.4897504], [-3.7232986, -38.4872595], [-3.7237935, -38.4873344], [-3.7237935, -38.4873344], [-3.7247514, -38.4875287], [-3.725582, -38.4875111], [-3.7260575, -38.4875549], [-3.7261543, -38.4875809], [-3.7259793, -38.4865965], [-3.7269335, -38.4865252], [-3.7283047, -38.48656], [-3.7283799, -38.4862639], [-3.7289687, -38.4862533], [-3.729645, -38.4862109], [-3.7306001, -38.4861545], [-3.7311756, -38.4861106], [-3.7314984, -38.4861197], [-3.7315231, -38.4866725], [-3.7315354, -38.487188], [-3.7315354, -38.487188], [-3.7315523, -38.4882691], [-3.7315628, -38.4887783], [-3.7315515, -38.4893235], [-3.7315515, -38.4893235], [-3.7312109, -38.4903103], [-3.7322074, -38.4906238], [-3.7325208, -38.489653], [-3.7325208, -38.489653], [-3.7334941, -38.489974], [-3.7344666, -38.4902679], [-3.7354743, -38.4905887], [-3.7354743, -38.4905887], [-3.7351584, -38.4915725], [-3.7351584, -38.4915725], [-3.7348627, -38.4924856], [-3.7348389, -38.4925563], [-3.7345359, -38.4934895], [-3.7342236, -38.494449], [-3.7352092, -38.4947783], [-3.7361791, -38.4950971], [-3.7358708, -38.4960579], [-3.7355608, -38.4970365], [-3.7352496, -38.497997], [-3.7352273, -38.4980658], [-3.7349147, -38.4990305], [-3.7346005, -38.4999941], [-3.7355994, -38.5003124], [-3.7366043, -38.5006452], [-3.7363949, -38.5012776], [-3.7362848, -38.5016168], [-3.7359766, -38.5025825], [-3.7363054, -38.5026891], [-3.7360719, -38.5036735], [-3.7358427, -38.5046765], [-3.7355798, -38.5057722], [-3.7359832, -38.5059], [-3.7365686, -38.5060909], [-3.7371242, -38.5062688], [-3.73798, -38.5065468], [-3.7376494, -38.5075336], [-3.7376301, -38.5075965], [-3.7374637, -38.5081052], [-3.7372959, -38.5086212], [-3.7369337, -38.5097321], [-3.7365971, -38.51077], [-3.7362376, -38.5118452], [-3.7359076, -38.5128838], [-3.7362876, -38.5130018], [-3.7368557, -38.5131829], [-3.7371094, -38.5132693], [-3.7367693, -38.514317], [-3.7367008, -38.5145255], [-3.7364303, -38.5153648], [-3.7360799, -38.5163949], [-3.7359938, -38.516654], [-3.7357372, -38.5174392], [-3.7354059, -38.5184975], [-3.7350599, -38.5195682], [-3.7347306, -38.5205857], [-3.7346705, -38.5207823], [-3.7343406, -38.5218173], [-3.7339929, -38.5229058], [-3.7339698, -38.5229711], [-3.7336856, -38.523894], [-3.7334528, -38.5246087], [-3.7331073, -38.5256985], [-3.7327143, -38.5268325], [-3.7326851, -38.526913], [-3.7326483, -38.5270185], [-3.7323746, -38.5279456], [-3.7321242, -38.5287191], [-3.7319494, -38.5292632], [-3.7317322, -38.5299363], [-3.7313941, -38.5309784], [-3.7310622, -38.5320247], [-3.7306757, -38.5332218], [-3.7303627, -38.5341846], [-3.7300247, -38.5352513], [-3.729998, -38.5353282], [-3.7298155, -38.5358727], [-3.7296504, -38.5363919], [-3.7294759, -38.5369125], [-3.7293049, -38.5374453], [-3.7289557, -38.5385349], [-3.7289711, -38.5385939], [-3.7286474, -38.5395799], [-3.728446, -38.5401973], [-3.7284175, -38.5402839], [-3.7278715, -38.5418603], [-3.727603, -38.5426892], [-3.7270929, -38.5442588], [-3.7266802, -38.545548], [-3.7266892, -38.5457895], [-3.7258184, -38.5459613], [-3.7247674, -38.5461752], [-3.7246557, -38.5461944], [-3.7246487, -38.5463121], [-3.7246363, -38.5465309], [-3.7245472, -38.5478089], [-3.7245382, -38.5481112], [-3.724526, -38.5488367], [-3.7245403, -38.5491573], [-3.7245647, -38.5495797], [-3.7246614, -38.5510758], [-3.7247691, -38.552064], [-3.7248923, -38.5528916], [-3.7252212, -38.5547103], [-3.7253991, -38.5556613], [-3.7254311, -38.5558283], [-3.7254516, -38.5559354], [-3.7255235, -38.5562894], [-3.7255824, -38.556629], [-3.7256447, -38.5570333], [-3.7257516, -38.5576847], [-3.725928, -38.5583788], [-3.726061, -38.5590893], [-3.7261837, -38.5598011], [-3.7263276, -38.5605003], [-3.7264676, -38.5613473], [-3.7266011, -38.5620529], [-3.7267726, -38.5628435], [-3.7269711, -38.5639149], [-3.7270801, -38.5645351], [-3.7271557, -38.5650641], [-3.7271564, -38.5651286], [-3.7271591, -38.5654116], [-3.7273938, -38.5667246], [-3.7274148, -38.5668411], [-3.7277648, -38.5686387], [-3.7278639, -38.5691936], [-3.7279195, -38.5693479], [-3.728144, -38.5703683], [-3.7282241, -38.5707139], [-3.7282933, -38.5709905], [-3.7285069, -38.5716095], [-3.7285501, -38.5717074], [-3.728712, -38.5721925], [-3.7289223, -38.5726968], [-3.7293144, -38.5727282], [-3.7294821, -38.5727465], [-3.7297079, -38.572766], [-3.7297981, -38.5727671], [-3.7302145, -38.5728069], [-3.7304001, -38.5728302], [-3.73085, -38.572818], [-3.7309309, -38.5728289], [-3.7314226, -38.572756]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_231b460c6da0d95872f9733d05741dfe);
+        
+</script>
+</html>
